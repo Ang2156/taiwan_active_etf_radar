@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>台灣主動式 ETF 持股雷達</title>
+<style>
+:root{--ink:#17302a;--paper:#f5f3ec;--card:#fffefa;--line:#d9ddd3;--green:#14745d;--red:#df5a4d;--muted:#697570}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif}
+button,input{font:inherit}button{cursor:pointer}header{height:74px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:sticky;top:0;background:#f5f3eced;backdrop-filter:blur(12px);z-index:5}
+.brand{display:flex;gap:10px;align-items:center;text-decoration:none;font-weight:800;color:inherit}.brand i{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:var(--ink);color:white;font-style:normal}
+nav{display:flex;gap:30px}nav a{text-decoration:none;font-size:13px;color:var(--muted)}.live{font-size:12px;background:white;border:1px solid var(--line);padding:8px 12px;border-radius:99px;color:var(--green)}
+.hero{max-width:1320px;margin:auto;padding:80px 20px 55px;display:grid;grid-template-columns:1.4fr 1fr;gap:8vw;align-items:end}.eyebrow{font-size:11px;letter-spacing:.17em;font-weight:800;color:var(--green);margin:0 0 16px}
+h1{font-family:"Noto Serif TC",serif;font-size:clamp(55px,6.2vw,94px);line-height:1.02;letter-spacing:-.05em;margin:0}h1 em{font-style:normal;color:var(--green)}
+.intro{max-width:640px;font-size:16px;line-height:1.9;color:var(--muted);margin-top:30px}.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);padding-top:20px}
+.stats b{font-family:Georgia,serif;font-size:32px;padding:0 17px;border-right:1px solid var(--line)}.stats b:first-child{padding-left:0}.stats b:last-child{border:0}.stats small{display:block;font:400 11px sans-serif;color:var(--muted)}
+.tools,.signals,.block,.method{max-width:1320px;margin-left:auto;margin-right:auto}.tools{background:var(--ink);color:white;border-radius:16px;padding:15px 20px;display:flex;gap:15px;box-shadow:0 18px 40px #17302a20}
+.tools label{flex:1;display:flex;gap:10px;align-items:center;background:#ffffff12;border:1px solid #ffffff20;border-radius:9px;padding:0 13px}.tools input{border:0;outline:0;background:none;color:white;width:100%}
+.tools div{display:flex;background:#ffffff10;padding:4px;border-radius:9px}.tools button{border:0;background:none;color:white;border-radius:7px;padding:9px 13px;font-size:12px}.tools button.on{background:white;color:var(--ink)}.tools .date{border:1px solid #ffffff20}
+.signals{display:grid;grid-template-columns:repeat(3,1fr);margin-top:22px;margin-bottom:85px;background:var(--card);border:1px solid var(--line);border-radius:15px;overflow:hidden}.signals article{padding:24px;border-right:1px solid var(--line)}.signals article:last-child{border:0}
+.signals span{font-size:10px;font-weight:800;background:#dff2e8;color:var(--green);padding:5px 8px;border-radius:99px}.signals b{display:block;margin:14px 0 4px;font-family:serif;font-size:18px}.signals p{margin:0;font-size:12px;color:var(--muted)}
+.block{margin-bottom:90px}.block h2,.method h2{font-family:serif;font-size:36px;margin:0 0 24px}.tabs{display:flex;gap:6px;margin-bottom:13px}.tabs button{background:var(--card);border:1px solid var(--line);border-radius:7px;padding:8px 13px;color:var(--muted);font-size:12px}.tabs button.on{background:var(--ink);color:white}
+.table{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}table{width:100%;border-collapse:collapse}th{text-align:left;padding:13px 18px;background:#efeee7;color:var(--muted);font-size:10px;letter-spacing:.08em}td{padding:17px 18px;border-top:1px solid #e7e7df;font-size:13px}td b,td small{display:block}.codes{font-size:11px;color:var(--muted)}
+mark{padding:5px 9px;border-radius:99px;font-weight:800;font-size:11px}.up{background:#dff2e8;color:var(--green)}.down{background:#f6dfdb;color:#a94339}.green{color:var(--green)}.red{color:var(--red)}.empty{text-align:center;color:var(--muted);padding:40px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.grid>article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:19px;transition:.2s}.grid>article:hover{transform:translateY(-3px);box-shadow:0 12px 30px #17302a10}.grid article>div{display:flex;justify-content:space-between}.grid a{text-decoration:none;color:var(--muted)}
+.pill{font-size:10px;font-weight:800;padding:4px 7px;border-radius:5px;background:#dff2e8;color:var(--green)}.pill.海外{background:#e8e6f5;color:#55528d}.pill.債券{background:#ede0b6;color:#6f5a1d}.grid strong{display:block;font:700 22px Georgia;margin-top:17px}.grid h3{font-size:14px;margin:6px 0}.grid>article>p{font-size:10px;color:var(--muted)}.grid footer{display:flex;gap:16px;border-top:1px solid #e7e7df;padding-top:12px}.grid footer span{font-weight:800}.grid footer small{display:block;color:var(--muted);font-weight:400;font-size:9px}
+.method{background:var(--ink);color:white;border-radius:22px;padding:48px;margin-bottom:80px}.method .eyebrow{color:#79c0a7}.method>div{display:grid;grid-template-columns:repeat(3,1fr);gap:45px}.method article b{color:#79c0a7}.method h3{font:700 19px serif}.method article p{font-size:12px;line-height:1.8;color:#b7c2be}.method>small{display:block;border-top:1px solid #ffffff25;margin-top:32px;padding-top:20px;color:#98aaa3}
+.bottom{border-top:1px solid var(--line);padding:28px 5vw;display:flex;justify-content:space-between;font-size:10px;color:var(--muted)}
+@media(max-width:900px){nav,.live{display:none}.hero{grid-template-columns:1fr;padding-top:55px}.tools,.signals,.block,.method{margin-left:18px;margin-right:18px}.tools{flex-wrap:wrap}.tools label{flex-basis:100%;height:44px}.signals{grid-template-columns:1fr}.signals article{border-right:0;border-bottom:1px solid var(--line)}.grid{grid-template-columns:repeat(2,1fr)}.table{overflow:auto}table{min-width:800px}.method>div{grid-template-columns:1fr}}
+@media(max-width:540px){.grid{grid-template-columns:1fr}.tools div,.tools .date{width:100%}.tools div button{flex:1}.stats b{font-size:24px}.method{padding:30px 23px}.bottom{gap:12px;flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<header><a class="brand" href="#"><i>脈</i>基金持股雷達</a><nav><a href="#moves">每日異動</a><a href="#funds">基金清單</a><a href="#about">資料說明</a></nav><span class="live">● 官方資料追蹤中</span></header>
+<section class="hero"><div><p class="eyebrow">TAIWAN ACTIVE ETF INTELLIGENCE</p><h1>看懂經理人<br><em>今天動了什麼。</em></h1><p class="intro">彙整台灣上市櫃主動式 ETF 每日公開投資組合，以前後兩個交易日快照計算增持、減持、新增與退出。</p></div><div class="stats"><b id="fundCount">16<small>追蹤基金</small></b><b>762<small>持股項目</small></b><b>07/22<small>最新資料日</small></b></div></section>
+<section class="tools"><label>⌕<input id="search" placeholder="搜尋基金代號、名稱或股票…"></label><div id="markets"></div><button class="date">2026 年 7 月 22 日⌄</button></section>
+<section class="signals"><article><span>市場共識</span><b>半導體持續獲得加碼</b><p>4 檔基金同步增持台積電，合計約 168 萬股</p></article><article><span>資金轉向</span><b>AI 伺服器供應鏈分歧</b><p>廣達獲加碼，同族群的緯創則出現退出</p></article><article><span>高息策略</span><b>金融股配置升溫</b><p>高息策略基金同步提高金融股部位</p></article></section>
+<section class="block" id="moves"><p class="eyebrow">DAILY MOVES</p><h2>今日持股異動</h2><div class="tabs" id="actions"></div><div class="table"><table><thead><tr><th>股票</th><th>產業</th><th>異動</th><th>股數變化</th><th>權重變化</th><th>同步基金</th></tr></thead><tbody id="moveRows"></tbody></table><div id="empty" class="empty" hidden>目前篩選條件下沒有資料。</div></div></section>
+<section class="block" id="funds"><p class="eyebrow">COVERAGE</p><h2>追蹤中的主動式 ETF</h2><div class="grid" id="fundGrid"></div></section>
+<section class="method" id="about"><p class="eyebrow">METHODOLOGY</p><h2>數字怎麼來的？</h2><div><article><b>01</b><h3>取得官方快照</h3><p>依證交所、櫃買中心與投信官網每日公開投資組合整理。</p></article><article><b>02</b><h3>逐檔標準化</h3><p>統一證券代號、股數與投資權重格式，排除現金項目。</p></article><article><b>03</b><h3>比較兩個交易日</h3><p>計算股數與權重差異，標記新增、增持、減持與退出。</p></article></div><small>此 HTML 內含固定的 2026/07/22 資料快照；異動不等同實際成交紀錄、成交時間或投資建議。</small></section>
+<footer class="bottom"><b>基金持股雷達</b><span>資料來源：臺灣證券交易所、證券櫃檯買賣中心及各基金發行人</span><span>2026</span></footer>
+<script>
+const funds=[
+["00980A","主動野村臺灣優選","野村投信","台股",17,12],["00981A","主動統一台股增長","統一投信","台股",21,9],["00982A","主動群益台灣強棒","群益投信","台股",14,16],["00983A","主動中信ARK創新","中信投信","海外",8,7],["00984A","主動安聯台灣高息","安聯投信","台股",11,13],["00985A","主動野村台灣50","野村投信","台股",9,10],["00990A","主動元大AI新經濟","元大投信","台股",16,8],["00991A","主動復華未來50","復華投信","台股",12,14],["00992A","主動群益科技創新","群益投信","台股",19,7],["00997A","主動群益美國增長","群益投信","海外",7,6],["00403A","主動統一升級50","統一投信","台股",18,10],["00405A","主動富邦台灣龍耀","富邦投信","台股",12,13],["00980D","主動聯博投等入息","聯博投信","債券",5,3],["00981D","主動中信非投等債","中信投信","債券",4,6],["00985D","主動貝萊德優投等","貝萊德投信","債券",7,4],["00986D","主動復華金融債息","復華投信","債券",6,5]];
+const moves=[
+["2330","台積電","半導體","增持",1684000,.42,"00981A · 00990A · 00992A · 00403A"],["2382","廣達","電腦週邊","增持",1248000,.31,"00980A · 00981A · 00982A"],["2308","台達電","電子零組件","增持",886000,.27,"00984A · 00992A · 00403A"],["3661","世芯-KY","半導體","新增",219000,.18,"00990A · 00992A"],["2881","富邦金","金融保險","增持",1452000,.22,"00984A · 00980A"],["2317","鴻海","其他電子","減持",-1176000,-.26,"00982A · 00985A · 00403A"],["2454","聯發科","半導體","減持",-482000,-.21,"00980A · 00981A"],["3231","緯創","電腦週邊","退出",-736000,-.16,"00982A"]];
+let market="全部",action="全部異動",query="";
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function buttons(id,items,get,set){document.getElementById(id).innerHTML=items.map(x=>`<button class="${get()===x?"on":""}" data-v="${x}">${x}</button>`).join("");document.querySelectorAll(`#${id} button`).forEach(b=>b.onclick=()=>{set(b.dataset.v);render()})}
+function render(){
+ buttons("markets",["全部","台股","海外","債券"],()=>market,v=>market=v);buttons("actions",["全部異動","新增","增持","減持","退出"],()=>action,v=>action=v);
+ const ff=funds.filter(f=>(market==="全部"||f[3]===market)&&f.join("").toLowerCase().includes(query.toLowerCase()));
+ const mm=moves.filter(m=>(action==="全部異動"||m[3]===action)&&m.join("").toLowerCase().includes(query.toLowerCase()));
+ document.getElementById("fundGrid").innerHTML=ff.map(f=>{const url=String(f[0]).endsWith("D")?"https://www.tpex.org.tw/zh-tw/product/etf/product/active.html":`https://www.twse.com.tw/zh/ETFortune-institute/etfInfo/${f[0]}`;return `<article><div><span class="pill ${f[3]}">${f[3]}</span><a href="${url}" target="_blank" rel="noreferrer">↗</a></div><strong>${f[0]}</strong><h3>${f[1]}</h3><p>${f[2]} · 更新 07/22</p><footer><span>48<small>檔持股</small></span><span class="green">+${f[4]}<small>增持</small></span><span class="red">−${f[5]}<small>減持</small></span></footer></article>`}).join("");
+ document.getElementById("moveRows").innerHTML=mm.map(m=>{const up=m[4]>0;return `<tr><td><b>${esc(m[1])}</b><small>${m[0]}</small></td><td>${m[2]}</td><td><mark class="${up?"up":"down"}">${m[3]}</mark></td><td class="${up?"green":"red"}">${up?"+":""}${Number(m[4]).toLocaleString("zh-TW")}</td><td class="${up?"green":"red"}">${up?"+":""}${Number(m[5]).toFixed(2)}%</td><td class="codes">${m[6]}</td></tr>`}).join("");
+ document.getElementById("empty").hidden=mm.length>0;
+}
+document.getElementById("search").addEventListener("input",e=>{query=e.target.value;render()});render();
+</script>
+</body>
+</html>
