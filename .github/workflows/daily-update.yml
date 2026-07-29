@@ -1,0 +1,45 @@
+name: 每日更新 ETF 持股
+
+on:
+    schedule:
+        # GitHub Actions 使用 UTC；10:30 UTC 等於台灣時間 18:30。
+        - cron: "30 10 * * 1-5"
+    workflow_dispatch:
+
+permissions:
+    contents: write
+
+concurrency:
+    group: daily-holdings-update
+    cancel-in-progress: false
+
+jobs:
+    update-holdings:
+        runs-on: ubuntu-latest
+        timeout-minutes: 15
+
+        steps:
+            - name: 下載儲存庫
+              uses: actions/checkout@v4
+
+            - name: 安裝 Python
+              uses: actions/setup-python@v5
+              with:
+                  python-version: "3.12"
+
+            - name: 更新持股資料
+              run: python scripts/update_holdings.py
+
+            - name: 提交資料更新
+              run: |
+                  git config user.name "github-actions[bot]"
+                  git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git add data/holdings.json data/history/
+
+                  if git diff --cached --quiet; then
+                      echo "沒有新的持股資料需要提交"
+                      exit 0
+                  fi
+
+                  git commit -m "自動更新每日 ETF 持股"
+                  git push
