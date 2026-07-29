@@ -1,0 +1,12 @@
+{
+    "schemaVersion": 1,
+    "date": null,
+    "previousDate": null,
+    "generatedAt": null,
+    "fundCount": 0,
+    "holdingCount": 0,
+    "funds": [],
+    "changes": [],
+    "errors": [],
+    "status": "waiting_for_first_update"
+}
