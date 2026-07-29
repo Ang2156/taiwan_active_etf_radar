@@ -31,18 +31,18 @@ mark{padding:5px 9px;border-radius:99px;font-weight:800;font-size:11px}.up{backg
 </style>
 </head>
 <body>
-<header><a class="brand" href="#"><i>脈</i>基金持股雷達</a><nav><a href="#moves">每日異動</a><a href="#funds">基金清單</a><a href="#about">資料說明</a></nav><span class="live">● 官方資料追蹤中</span></header>
-<section class="hero"><div><p class="eyebrow">TAIWAN ACTIVE ETF INTELLIGENCE</p><h1>看懂經理人<br><em>今天動了什麼。</em></h1><p class="intro">彙整台灣上市櫃主動式 ETF 每日公開投資組合，以前後兩個交易日快照計算增持、減持、新增與退出。</p></div><div class="stats"><b id="fundCount">16<small>追蹤基金</small></b><b>762<small>持股項目</small></b><b>07/22<small>最新資料日</small></b></div></section>
-<section class="tools"><label>⌕<input id="search" placeholder="搜尋基金代號、名稱或股票…"></label><div id="markets"></div><button class="date">2026 年 7 月 22 日⌄</button></section>
+<header><a class="brand" href="#"><i>脈</i>基金持股雷達</a><nav><a href="#moves">每日異動</a><a href="#funds">基金清單</a><a href="#about">資料說明</a></nav><span class="live" id="dataStatus">● 正在讀取最新資料</span></header>
+<section class="hero"><div><p class="eyebrow">TAIWAN ACTIVE ETF INTELLIGENCE</p><h1>看懂經理人<br><em>今天動了什麼。</em></h1><p class="intro">彙整台灣上市櫃主動式 ETF 每日公開投資組合，以前後兩個交易日快照計算增持、減持、新增與退出。</p></div><div class="stats"><b id="fundCount">16<small>追蹤基金</small></b><b id="holdingCount">762<small>持股項目</small></b><b id="latestDate">07/22<small>最新資料日</small></b></div></section>
+<section class="tools"><label>⌕<input id="search" placeholder="搜尋基金代號、名稱或股票…"></label><div id="markets"></div><button class="date" id="dataDate" type="button">2026 年 7 月 22 日</button></section>
 <section class="signals"><article><span>市場共識</span><b>半導體持續獲得加碼</b><p>4 檔基金同步增持台積電，合計約 168 萬股</p></article><article><span>資金轉向</span><b>AI 伺服器供應鏈分歧</b><p>廣達獲加碼，同族群的緯創則出現退出</p></article><article><span>高息策略</span><b>金融股配置升溫</b><p>高息策略基金同步提高金融股部位</p></article></section>
 <section class="block" id="moves"><p class="eyebrow">DAILY MOVES</p><h2>今日持股異動</h2><div class="tabs" id="actions"></div><div class="table"><table><thead><tr><th>股票</th><th>產業</th><th>異動</th><th>股數變化</th><th>權重變化</th><th>同步基金</th></tr></thead><tbody id="moveRows"></tbody></table><div id="empty" class="empty" hidden>目前篩選條件下沒有資料。</div></div></section>
 <section class="block" id="funds"><p class="eyebrow">COVERAGE</p><h2>追蹤中的主動式 ETF</h2><div class="grid" id="fundGrid"></div></section>
 <section class="method" id="about"><p class="eyebrow">METHODOLOGY</p><h2>數字怎麼來的？</h2><div><article><b>01</b><h3>取得官方快照</h3><p>依證交所、櫃買中心與投信官網每日公開投資組合整理。</p></article><article><b>02</b><h3>逐檔標準化</h3><p>統一證券代號、股數與投資權重格式，排除現金項目。</p></article><article><b>03</b><h3>比較兩個交易日</h3><p>計算股數與權重差異，標記新增、增持、減持與退出。</p></article></div><small>此 HTML 內含固定的 2026/07/22 資料快照；異動不等同實際成交紀錄、成交時間或投資建議。</small></section>
 <footer class="bottom"><b>基金持股雷達</b><span>資料來源：臺灣證券交易所、證券櫃檯買賣中心及各基金發行人</span><span>2026</span></footer>
 <script>
-const funds=[
+let funds=[
 ["00980A","主動野村臺灣優選","野村投信","台股",17,12],["00981A","主動統一台股增長","統一投信","台股",21,9],["00982A","主動群益台灣強棒","群益投信","台股",14,16],["00983A","主動中信ARK創新","中信投信","海外",8,7],["00984A","主動安聯台灣高息","安聯投信","台股",11,13],["00985A","主動野村台灣50","野村投信","台股",9,10],["00990A","主動元大AI新經濟","元大投信","台股",16,8],["00991A","主動復華未來50","復華投信","台股",12,14],["00992A","主動群益科技創新","群益投信","台股",19,7],["00997A","主動群益美國增長","群益投信","海外",7,6],["00403A","主動統一升級50","統一投信","台股",18,10],["00405A","主動富邦台灣龍耀","富邦投信","台股",12,13],["00980D","主動聯博投等入息","聯博投信","債券",5,3],["00981D","主動中信非投等債","中信投信","債券",4,6],["00985D","主動貝萊德優投等","貝萊德投信","債券",7,4],["00986D","主動復華金融債息","復華投信","債券",6,5]];
-const moves=[
+let moves=[
 ["2330","台積電","半導體","增持",1684000,.42,"00981A · 00990A · 00992A · 00403A"],["2382","廣達","電腦週邊","增持",1248000,.31,"00980A · 00981A · 00982A"],["2308","台達電","電子零組件","增持",886000,.27,"00984A · 00992A · 00403A"],["3661","世芯-KY","半導體","新增",219000,.18,"00990A · 00992A"],["2881","富邦金","金融保險","增持",1452000,.22,"00984A · 00980A"],["2317","鴻海","其他電子","減持",-1176000,-.26,"00982A · 00985A · 00403A"],["2454","聯發科","半導體","減持",-482000,-.21,"00980A · 00981A"],["3231","緯創","電腦週邊","退出",-736000,-.16,"00982A"]];
 let market="全部",action="全部異動",query="";
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -51,11 +51,76 @@ function render(){
  buttons("markets",["全部","台股","海外","債券"],()=>market,v=>market=v);buttons("actions",["全部異動","新增","增持","減持","退出"],()=>action,v=>action=v);
  const ff=funds.filter(f=>(market==="全部"||f[3]===market)&&f.join("").toLowerCase().includes(query.toLowerCase()));
  const mm=moves.filter(m=>(action==="全部異動"||m[3]===action)&&m.join("").toLowerCase().includes(query.toLowerCase()));
- document.getElementById("fundGrid").innerHTML=ff.map(f=>{const url=String(f[0]).endsWith("D")?"https://www.tpex.org.tw/zh-tw/product/etf/product/active.html":`https://www.twse.com.tw/zh/ETFortune-institute/etfInfo/${f[0]}`;return `<article><div><span class="pill ${f[3]}">${f[3]}</span><a href="${url}" target="_blank" rel="noreferrer">↗</a></div><strong>${f[0]}</strong><h3>${f[1]}</h3><p>${f[2]} · 更新 07/22</p><footer><span>48<small>檔持股</small></span><span class="green">+${f[4]}<small>增持</small></span><span class="red">−${f[5]}<small>減持</small></span></footer></article>`}).join("");
+ document.getElementById("fundGrid").innerHTML=ff.map(f=>{const url=String(f[0]).endsWith("D")?"https://www.tpex.org.tw/zh-tw/product/etf/product/active.html":`https://www.twse.com.tw/zh/ETFortune-institute/etfInfo/${f[0]}`;return `<article><div><span class="pill ${f[3]}">${f[3]}</span><a href="${url}" target="_blank" rel="noreferrer">↗</a></div><strong>${f[0]}</strong><h3>${f[1]}</h3><p>${f[2]} · 更新 07/22</p><footer><span>${Number(f[6]??0).toLocaleString("zh-TW")}<small>檔持股</small></span><span class="green">+${f[4]}<small>增持</small></span><span class="red">−${f[5]}<small>減持</small></span></footer></article>`}).join("");
  document.getElementById("moveRows").innerHTML=mm.map(m=>{const up=m[4]>0;return `<tr><td><b>${esc(m[1])}</b><small>${m[0]}</small></td><td>${m[2]}</td><td><mark class="${up?"up":"down"}">${m[3]}</mark></td><td class="${up?"green":"red"}">${up?"+":""}${Number(m[4]).toLocaleString("zh-TW")}</td><td class="${up?"green":"red"}">${up?"+":""}${Number(m[5]).toFixed(2)}%</td><td class="codes">${m[6]}</td></tr>`}).join("");
  document.getElementById("empty").hidden=mm.length>0;
 }
-document.getElementById("search").addEventListener("input",e=>{query=e.target.value;render()});render();
+function marketOf(fund){
+ const code=String(fund.code||"");
+ if(code.endsWith("D"))return "債券";
+ return /美國|全球|海外|ARK/i.test(String(fund.name||""))?"海外":"台股";
+}
+function formatDate(value,long=false){
+ const d=new Date(String(value)+"T00:00:00");
+ if(Number.isNaN(d.getTime()))return value||"—";
+ return long?`${d.getFullYear()} 年 ${d.getMonth()+1} 月 ${d.getDate()} 日`:
+  `${String(d.getMonth()+1).padStart(2,"0")}/${String(d.getDate()).padStart(2,"0")}`;
+}
+function aggregateMoves(changes){
+ const grouped=new Map();
+ changes.forEach(c=>{
+  const key=`${c.symbol}|${c.action}`;
+  const row=grouped.get(key)||{
+   symbol:c.symbol,name:c.name||c.symbol,industry:c.industry||"—",action:c.action,
+   shares:0,weight:0,hasWeight:false,funds:new Set()
+  };
+  row.shares+=Number(c.shareChange||0);
+  if(c.weightChange!==null&&c.weightChange!==undefined){
+   row.weight+=Number(c.weightChange);row.hasWeight=true;
+  }
+  row.funds.add(c.fundCode);grouped.set(key,row);
+ });
+ return [...grouped.values()].map(r=>[
+  r.symbol,r.name,r.industry,r.action,r.shares,
+  r.hasWeight?r.weight:0,[...r.funds].join(" · ")
+ ]).sort((a,b)=>Math.abs(b[4])-Math.abs(a[4]));
+}
+async function loadLatestData(){
+ const status=document.getElementById("dataStatus");
+ try{
+  const response=await fetch("./data/holdings.json",{cache:"no-store"});
+  if(!response.ok)throw new Error(`HTTP ${response.status}`);
+  const data=await response.json();
+  if(!Array.isArray(data.funds))throw new Error("JSON 缺少 funds");
+  const counts=new Map();
+  (data.changes||[]).forEach(c=>{
+   const x=counts.get(c.fundCode)||{up:0,down:0};
+   if(c.action==="新增"||c.action==="增持")x.up++;
+   if(c.action==="減持"||c.action==="退出")x.down++;
+   counts.set(c.fundCode,x);
+  });
+  funds=data.funds.map(f=>{
+   const c=counts.get(f.code)||{up:0,down:0};
+   return [f.code,f.name,f.issuer,marketOf(f),c.up,c.down,
+    Number(f.holdingCount??(f.holdings||[]).length)];
+  });
+  moves=aggregateMoves(data.changes||[]);
+  document.getElementById("fundCount").firstChild.nodeValue=String(data.fundCount??funds.length);
+  document.getElementById("holdingCount").firstChild.nodeValue=
+   Number(data.holdingCount??0).toLocaleString("zh-TW");
+  document.getElementById("latestDate").firstChild.nodeValue=formatDate(data.date);
+  document.getElementById("dataDate").textContent=formatDate(data.date,true);
+  status.textContent=data.errors?.length?
+   `● 已更新，${data.errors.length} 個來源異常`:"● 官方資料已更新";
+  render();
+ }catch(error){
+  console.error("無法載入 data/holdings.json：",error);
+  status.textContent="● 暫時顯示備援資料";
+ }
+}
+document.getElementById("search").addEventListener("input",e=>{query=e.target.value;render()});
+render();
+loadLatestData();
 </script>
 </body>
 </html>
