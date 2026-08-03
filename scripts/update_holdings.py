@@ -57,11 +57,10 @@ DEFAULT_SOURCES = [
         "code": "00980A",
         "name": "主動野村臺灣優選",
         "issuer": "野村投信",
-        "url": (
-            "https://www.nomurafunds.com.tw/ETFWEB/product-description"
-            "?fundNo=00980A&tab=Shareholding"
-        ),
-        "format": "html",
+        "url": "https://www.nomurafunds.com.tw/API/ETFAPI/api/Fund/GetFundAssets",
+        "format": "nomura_json",
+        "method": "POST",
+        "payload": {"FundID": "00980A", "SearchDate": None},
     },
     {
         "code": "00981A",
@@ -69,13 +68,15 @@ DEFAULT_SOURCES = [
         "issuer": "統一投信",
         "url": "https://www.ezmoney.com.tw/ETF/Fund/Info?fundCode=49YTW",
         "format": "html",
+        "browser": True,
+        "click_texts": ["持股狀況", "投資組合", "持股"],
     },
     {
         "code": "00982A",
         "name": "主動群益台灣強棒",
         "issuer": "群益投信",
-        "url": "https://www.capitalfund.com.tw/etf/product/detail/399",
-        "format": "html",
+        "url": "https://www.capitalfund.com.tw/etf/product/detail/399/portfolio",
+        "format": "capital_html",
     },
 ]
 
@@ -154,6 +155,58 @@ class TableParser(HTMLParser):
             if self._table:
                 self.tables.append(self._table)
             self._table = None
+
+
+class CapitalPortfolioParser(HTMLParser):
+    """Parse the server-rendered desktop holdings rows on Capital's ETF page."""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.depth = 0
+        self.container_depth: int | None = None
+        self.row_depth: int | None = None
+        self.cell_depth: int | None = None
+        self.cell_parts: list[str] = []
+        self.row: list[str] = []
+        self.rows: list[list[str]] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag.lower() != "div":
+            return
+        self.depth += 1
+        classes = set(dict(attrs).get("class", "").split())
+        if {"pct-stock-table-tbody", "tbody"} <= classes:
+            self.container_depth = self.depth
+            return
+        if self.container_depth is None:
+            return
+        if {"tr", "show-for-medium"} <= classes and self.row_depth is None:
+            self.row_depth = self.depth
+            self.row = []
+            return
+        if self.row_depth is not None and ({"th"} <= classes or {"td"} <= classes):
+            self.cell_depth = self.depth
+            self.cell_parts = []
+
+    def handle_data(self, data: str) -> None:
+        if self.cell_depth is not None:
+            self.cell_parts.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag.lower() != "div":
+            return
+        if self.cell_depth == self.depth:
+            self.row.append(clean_text("".join(self.cell_parts)))
+            self.cell_depth = None
+            self.cell_parts = []
+        if self.row_depth == self.depth:
+            if len(self.row) >= 4:
+                self.rows.append(self.row[:4])
+            self.row_depth = None
+            self.row = []
+        if self.container_depth == self.depth:
+            self.container_depth = None
+        self.depth -= 1
 
 
 def clean_text(value: Any) -> str:
@@ -308,13 +361,20 @@ def decode_bytes(raw: bytes, charset: str | None = None) -> str:
 
 
 def download(source: dict[str, Any]) -> tuple[bytes, str]:
+    payload = None
+    headers = {
+        "User-Agent": USER_AGENT,
+        "Accept": "application/json,text/csv,text/html,*/*",
+        "Referer": source.get("referer", source["url"]),
+    }
+    if source.get("payload") is not None:
+        payload = json.dumps(source["payload"], ensure_ascii=False).encode("utf-8")
+        headers["Content-Type"] = "application/json"
     request = Request(
         source["url"],
-        headers={
-            "User-Agent": USER_AGENT,
-            "Accept": "application/json,text/csv,text/html,*/*",
-            "Referer": source.get("referer", source["url"]),
-        },
+        data=payload,
+        headers=headers,
+        method=clean_text(source.get("method", "GET")).upper(),
     )
     with urlopen(request, timeout=45) as response:
         raw = response.read()
@@ -333,6 +393,21 @@ def parse_source(raw: bytes, source: dict[str, Any], encoding_hint: str) -> list
         fmt = "json" if stripped.startswith(("{", "[")) else (
             "html" if "<html" in stripped[:500].lower() else "csv"
         )
+    if fmt == "nomura_json":
+        data = json.loads(text)
+        tables = (
+            data.get("Entries", {})
+            .get("Data", {})
+            .get("Table", [])
+        )
+        candidates: list[list[Holding]] = []
+        for table in tables:
+            columns = [column.get("Name", "") for column in table.get("Columns", [])]
+            rows = [columns, *table.get("Rows", [])]
+            candidates.append(rows_to_holdings(rows))
+            if table.get("NavDate") and not source.get("_detected_date"):
+                source["_detected_date"] = str(table["NavDate"]).replace("/", "-")
+        return max(candidates, key=len, default=[])
     if fmt == "json":
         data = json.loads(text)
         return dict_rows_to_holdings(find_json_records(data))
@@ -345,7 +420,120 @@ def parse_source(raw: bytes, source: dict[str, Any], encoding_hint: str) -> list
         parser.feed(text)
         candidates = [rows_to_holdings(table) for table in parser.tables]
         return max(candidates, key=len, default=[])
+    if fmt == "capital_html":
+        parser = CapitalPortfolioParser()
+        parser.feed(text)
+        rows = [["股票代號", "股票名稱", "權重(%)", "股數"], *parser.rows]
+        holdings = rows_to_holdings(rows)
+        date_match = re.search(r"資料日期[：:\s]*(\d{4}[/-]\d{1,2}[/-]\d{1,2})", text)
+        if date_match:
+            source["_detected_date"] = date_match.group(1).replace("/", "-")
+        return holdings
     raise ValueError(f"不支援的來源格式：{fmt}")
+
+
+def download_with_browser(source: dict[str, Any]) -> list[Holding]:
+    """Render a protected/dynamic official page and inspect its API responses."""
+
+    try:
+        from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
+        from playwright.sync_api import sync_playwright
+    except ImportError as exc:
+        raise RuntimeError(
+            "此來源需要 Playwright；請先執行 pip install playwright "
+            "以及 playwright install chromium"
+        ) from exc
+
+    candidates: list[list[Holding]] = []
+    response_errors: list[str] = []
+
+    def inspect_response(response: Any) -> None:
+        try:
+            content_type = response.headers.get("content-type", "").lower()
+            if "application/json" in content_type or response.url.lower().endswith(".json"):
+                data = response.json()
+                records = find_json_records(data)
+                holdings = dict_rows_to_holdings(records)
+                if holdings:
+                    candidates.append(holdings)
+            elif "text/csv" in content_type or response.url.lower().endswith(".csv"):
+                text = response.text()
+                rows = list(csv.reader(io.StringIO(text)))
+                holdings = rows_to_holdings(rows)
+                if holdings:
+                    candidates.append(holdings)
+        except Exception as exc:  # A page may load many unrelated/streaming responses.
+            response_errors.append(str(exc))
+
+    with sync_playwright() as playwright:
+        browser = playwright.chromium.launch(
+            headless=True,
+            args=["--disable-dev-shm-usage", "--no-sandbox"],
+        )
+        context = browser.new_context(
+            locale="zh-TW",
+            timezone_id="Asia/Taipei",
+            user_agent=USER_AGENT,
+            viewport={"width": 1440, "height": 1200},
+        )
+        page = context.new_page()
+        page.on("response", inspect_response)
+        try:
+            page.goto(
+                source["url"],
+                wait_until="domcontentloaded",
+                timeout=int(os.getenv("HOLDINGS_BROWSER_TIMEOUT", "90000")),
+            )
+            page.wait_for_timeout(4000)
+            for text in source.get("click_texts", []):
+                locator = page.get_by_text(text, exact=False)
+                if locator.count():
+                    try:
+                        locator.first.click(timeout=5000)
+                        page.wait_for_timeout(2500)
+                    except PlaywrightTimeoutError:
+                        pass
+            try:
+                page.wait_for_load_state("networkidle", timeout=15000)
+            except PlaywrightTimeoutError:
+                pass
+            html = page.content()
+            rendered_source = dict(source)
+            rendered_source["format"] = "html"
+            rendered = parse_source(html.encode("utf-8"), rendered_source, "utf-8")
+            if rendered:
+                candidates.append(rendered)
+        finally:
+            context.close()
+            browser.close()
+
+    if not candidates:
+        detail = f"；已檢查 {len(response_errors)} 個無法解析的回應" if response_errors else ""
+        raise ValueError(f"瀏覽器已載入頁面，但找不到完整持股資料{detail}")
+    return max(candidates, key=len)
+
+
+def fetch_holdings(source: dict[str, Any]) -> list[Holding]:
+    """Use the official API/HTML first, then a real browser when configured."""
+
+    direct_error: Exception | None = None
+    try:
+        raw, hint = download(source)
+        holdings = parse_source(raw, source, hint)
+        if holdings:
+            return holdings
+        direct_error = ValueError("官方來源沒有可辨識的持股資料")
+    except Exception as exc:
+        direct_error = exc
+
+    if source.get("browser"):
+        try:
+            return download_with_browser(source)
+        except Exception as browser_error:
+            raise ValueError(
+                f"直接下載失敗：{direct_error}；瀏覽器備援失敗：{browser_error}"
+            ) from browser_error
+    raise ValueError(str(direct_error))
 
 
 def load_sources() -> list[dict[str, Any]]:
@@ -364,7 +552,7 @@ def load_sources() -> list[dict[str, Any]]:
 
 
 def snapshot_date(source: dict[str, Any], holdings: list[Holding]) -> str:
-    configured = clean_text(source.get("date"))
+    configured = clean_text(source.get("_detected_date") or source.get("date"))
     if configured:
         return configured.replace("/", "-")
     return date.today().isoformat()
@@ -462,21 +650,13 @@ def write_json(path: Path, value: dict[str, Any]) -> None:
 
 def main() -> int:
     sources = load_sources()
-    today = date.today().isoformat()
-    previous = read_previous(today)
     funds: list[dict[str, Any]] = []
     errors: list[dict[str, str]] = []
 
     for index, source in enumerate(sources):
         code = clean_text(source["code"]).upper()
         try:
-            raw, hint = download(source)
-            holdings = parse_source(raw, source, hint)
-            if not holdings:
-                raise ValueError(
-                    "找不到包含證券代號與股數的持股表；"
-                    "此頁可能使用 JavaScript，請改填官方 CSV/JSON 下載網址"
-                )
+            holdings = fetch_holdings(source)
             funds.append(
                 {
                     "code": code,
@@ -499,9 +679,14 @@ def main() -> int:
         print("No valid official holdings were downloaded; output was not replaced.", file=sys.stderr)
         return 1
 
+    data_date = max(
+        (clean_text(fund.get("date")) for fund in funds if clean_text(fund.get("date"))),
+        default=date.today().isoformat(),
+    )
+    previous = read_previous(data_date)
     payload: dict[str, Any] = {
         "schemaVersion": 1,
-        "date": today,
+        "date": data_date,
         "previousDate": previous.get("date") if previous else None,
         "generatedAt": datetime.now().astimezone().isoformat(timespec="seconds"),
         "fundCount": len(funds),
@@ -510,7 +695,7 @@ def main() -> int:
         "changes": calculate_changes(funds, previous),
         "errors": errors,
     }
-    write_json(HISTORY_DIR / f"{today}.json", payload)
+    write_json(HISTORY_DIR / f"{data_date}.json", payload)
     write_json(OUTPUT_FILE, payload)
     print(
         f"Wrote {OUTPUT_FILE.relative_to(ROOT)}: "
