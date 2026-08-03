@@ -2,233 +2,226 @@
   "schemaVersion": 1,
   "date": "2026-08-03",
   "previousDate": null,
-  "generatedAt": "2026-08-03T07:10:25+00:00",
+  "generatedAt": "2026-08-03T13:26:33+00:00",
   "fundCount": 3,
-  "holdingCount": 111,
+  "holdingCount": 112,
   "funds": [
     {
       "code": "00980A",
       "name": "主動野村臺灣優選",
       "issuer": "野村投信",
       "source": "https://www.nomurafunds.com.tw/API/ETFAPI/api/Fund/GetFundAssets",
-      "date": "2026-07-31",
+      "date": "2026-08-03",
       "holdingCount": 50,
       "holdings": [
         {
           "symbol": "2330",
           "name": "台灣積體電路製造",
           "shares": 663000,
-          "weight": 9.63,
+          "weight": 8.93,
           "industry": ""
         },
         {
           "symbol": "2454",
           "name": "聯發科技",
           "shares": 279000,
-          "weight": 5.94,
-          "industry": ""
-        },
-        {
-          "symbol": "2383",
-          "name": "台光電子材料",
-          "shares": 152000,
-          "weight": 4.32,
+          "weight": 6.2,
           "industry": ""
         },
         {
           "symbol": "2059",
           "name": "川湖科技",
           "shares": 91000,
-          "weight": 4.28,
+          "weight": 4.47,
+          "industry": ""
+        },
+        {
+          "symbol": "2383",
+          "name": "台光電子材料",
+          "shares": 152000,
+          "weight": 4.3,
           "industry": ""
         },
         {
           "symbol": "2308",
           "name": "台達電子工業",
           "shares": 404000,
-          "weight": 3.97,
-          "industry": ""
-        },
-        {
-          "symbol": "7769",
-          "name": "鴻勁精密",
-          "shares": 73000,
-          "weight": 2.7,
+          "weight": 3.63,
           "industry": ""
         },
         {
           "symbol": "3037",
           "name": "欣興電子",
           "shares": 563000,
-          "weight": 2.66,
+          "weight": 2.77,
+          "industry": ""
+        },
+        {
+          "symbol": "7769",
+          "name": "鴻勁精密",
+          "shares": 73000,
+          "weight": 2.67,
           "industry": ""
         },
         {
           "symbol": "6223",
           "name": "旺矽科技",
           "shares": 76000,
-          "weight": 2.4,
-          "industry": ""
-        },
-        {
-          "symbol": "2317",
-          "name": "鴻海精密工業",
-          "shares": 1569000,
-          "weight": 2.36,
+          "weight": 2.51,
           "industry": ""
         },
         {
           "symbol": "3081",
           "name": "聯亞光電工業",
           "shares": 237600,
-          "weight": 2.32,
+          "weight": 2.42,
           "industry": ""
         },
         {
           "symbol": "2408",
           "name": "南亞科技",
           "shares": 1039000,
-          "weight": 2.24,
+          "weight": 2.34,
+          "industry": ""
+        },
+        {
+          "symbol": "1303",
+          "name": "南亞塑膠工業",
+          "shares": 2416000,
+          "weight": 2.27,
+          "industry": ""
+        },
+        {
+          "symbol": "2317",
+          "name": "鴻海精密工業",
+          "shares": 1569000,
+          "weight": 2.26,
+          "industry": ""
+        },
+        {
+          "symbol": "8299",
+          "name": "群聯電子",
+          "shares": 218000,
+          "weight": 2.18,
           "industry": ""
         },
         {
           "symbol": "6515",
           "name": "穎崴科技",
           "shares": 55000,
-          "weight": 1.92,
-          "industry": ""
-        },
-        {
-          "symbol": "2368",
-          "name": "金像電子（股）公司",
-          "shares": 393000,
-          "weight": 1.87,
+          "weight": 1.95,
           "industry": ""
         },
         {
           "symbol": "2345",
           "name": "智邦科技",
           "shares": 147000,
-          "weight": 1.87,
+          "weight": 1.95,
           "industry": ""
         },
         {
-          "symbol": "2360",
-          "name": "致茂電子",
-          "shares": 148000,
-          "weight": 1.86,
+          "symbol": "2368",
+          "name": "金像電子（股）公司",
+          "shares": 393000,
+          "weight": 1.95,
           "industry": ""
         },
         {
           "symbol": "3017",
           "name": "奇鋐科技",
           "shares": 134000,
-          "weight": 1.86,
+          "weight": 1.94,
           "industry": ""
         },
         {
           "symbol": "6669",
           "name": "緯穎科技服務",
-          "shares": 47000,
-          "weight": 1.52,
+          "shares": 52000,
+          "weight": 1.75,
           "industry": ""
         },
         {
-          "symbol": "1303",
-          "name": "南亞塑膠工業",
-          "shares": 1535000,
-          "weight": 1.47,
+          "symbol": "5274",
+          "name": "信驊科技",
+          "shares": 18300,
+          "weight": 1.66,
           "industry": ""
         },
         {
-          "symbol": "2891",
-          "name": "中國信託金融控股",
-          "shares": 3711000,
-          "weight": 1.44,
+          "symbol": "2382",
+          "name": "廣達電腦",
+          "shares": 987000,
+          "weight": 1.66,
+          "industry": ""
+        },
+        {
+          "symbol": "2360",
+          "name": "致茂電子",
+          "shares": 148000,
+          "weight": 1.65,
           "industry": ""
         },
         {
           "symbol": "3653",
           "name": "健策精密工業",
           "shares": 69000,
-          "weight": 1.42,
-          "industry": ""
-        },
-        {
-          "symbol": "5274",
-          "name": "信驊科技",
-          "shares": 16300,
-          "weight": 1.42,
-          "industry": ""
-        },
-        {
-          "symbol": "2376",
-          "name": "技嘉科技",
-          "shares": 694000,
-          "weight": 1.4,
+          "weight": 1.48,
           "industry": ""
         },
         {
           "symbol": "3443",
           "name": "創意電子",
           "shares": 59000,
-          "weight": 1.35,
-          "industry": ""
-        },
-        {
-          "symbol": "3036",
-          "name": "文曄科技",
-          "shares": 1147000,
-          "weight": 1.35,
-          "industry": ""
-        },
-        {
-          "symbol": "5904",
-          "name": "寶雅國際",
-          "shares": 312450,
-          "weight": 1.35,
+          "weight": 1.4,
           "industry": ""
         },
         {
           "symbol": "3711",
           "name": "日月光投資控股",
           "shares": 400000,
-          "weight": 1.33,
+          "weight": 1.39,
           "industry": ""
         },
         {
-          "symbol": "2382",
-          "name": "廣達電腦",
-          "shares": 723000,
-          "weight": 1.26,
+          "symbol": "2891",
+          "name": "中國信託金融控股",
+          "shares": 3711000,
+          "weight": 1.37,
+          "industry": ""
+        },
+        {
+          "symbol": "3036",
+          "name": "文曄科技",
+          "shares": 1147000,
+          "weight": 1.33,
           "industry": ""
         },
         {
           "symbol": "6274",
           "name": "台燿科技",
           "shares": 187000,
-          "weight": 1.24,
+          "weight": 1.3,
           "industry": ""
         },
         {
-          "symbol": "8299",
-          "name": "群聯電子",
-          "shares": 120000,
-          "weight": 1.18,
+          "symbol": "5904",
+          "name": "寶雅國際",
+          "shares": 312450,
+          "weight": 1.28,
+          "industry": ""
+        },
+        {
+          "symbol": "2376",
+          "name": "技嘉科技",
+          "shares": 694000,
+          "weight": 1.28,
           "industry": ""
         },
         {
           "symbol": "3293",
           "name": "鈊象電子",
           "shares": 252000,
-          "weight": 1.17,
-          "industry": ""
-        },
-        {
-          "symbol": "8046",
-          "name": "南亞電路板",
-          "shares": 203000,
-          "weight": 1.12,
+          "weight": 1.1,
           "industry": ""
         },
         {
@@ -239,45 +232,45 @@
           "industry": ""
         },
         {
+          "symbol": "8046",
+          "name": "南亞電路板",
+          "shares": 203000,
+          "weight": 1.1,
+          "industry": ""
+        },
+        {
           "symbol": "2327",
           "name": "國巨",
           "shares": 345000,
-          "weight": 1.04,
-          "industry": ""
-        },
-        {
-          "symbol": "2884",
-          "name": "玉山金融控股",
-          "shares": 4362622,
-          "weight": 1.01,
-          "industry": ""
-        },
-        {
-          "symbol": "3529",
-          "name": "力旺電子",
-          "shares": 65000,
-          "weight": 0.96,
+          "weight": 1.08,
           "industry": ""
         },
         {
           "symbol": "8996",
           "name": "高力熱處理工業",
           "shares": 181000,
-          "weight": 0.93,
+          "weight": 0.97,
+          "industry": ""
+        },
+        {
+          "symbol": "2884",
+          "name": "玉山金融控股",
+          "shares": 4362622,
+          "weight": 0.95,
           "industry": ""
         },
         {
           "symbol": "2344",
           "name": "華邦電子",
           "shares": 1153000,
-          "weight": 0.9,
+          "weight": 0.94,
           "industry": ""
         },
         {
-          "symbol": "3008",
-          "name": "大立光電",
-          "shares": 36000,
-          "weight": 0.87,
+          "symbol": "3529",
+          "name": "力旺電子",
+          "shares": 65000,
+          "weight": 0.88,
           "industry": ""
         },
         {
@@ -288,80 +281,87 @@
           "industry": ""
         },
         {
+          "symbol": "3008",
+          "name": "大立光電",
+          "shares": 36000,
+          "weight": 0.81,
+          "industry": ""
+        },
+        {
           "symbol": "4958",
           "name": "臻鼎科技控股",
           "shares": 335000,
-          "weight": 0.83,
+          "weight": 0.8,
           "industry": ""
         },
         {
           "symbol": "6213",
           "name": "聯茂電子",
           "shares": 482000,
-          "weight": 0.76,
+          "weight": 0.79,
           "industry": ""
         },
         {
           "symbol": "3189",
           "name": "景碩科技",
           "shares": 185000,
-          "weight": 0.7,
+          "weight": 0.73,
+          "industry": ""
+        },
+        {
+          "symbol": "3044",
+          "name": "健鼎科技",
+          "shares": 345000,
+          "weight": 0.73,
+          "industry": ""
+        },
+        {
+          "symbol": "3264",
+          "name": "欣銓科技",
+          "shares": 650000,
+          "weight": 0.69,
+          "industry": ""
+        },
+        {
+          "symbol": "6831",
+          "name": "邁科科技",
+          "shares": 182000,
+          "weight": 0.58,
           "industry": ""
         },
         {
           "symbol": "6805",
           "name": "富世達",
           "shares": 54000,
-          "weight": 0.44,
+          "weight": 0.45,
           "industry": ""
         },
         {
           "symbol": "3665",
           "name": "貿聯控股（BizLink Holding In",
           "shares": 32336,
-          "weight": 0.41,
-          "industry": ""
-        },
-        {
-          "symbol": "3044",
-          "name": "健鼎科技",
-          "shares": 164000,
-          "weight": 0.36,
+          "weight": 0.39,
           "industry": ""
         },
         {
           "symbol": "3026",
           "name": "禾伸堂企業",
           "shares": 134000,
-          "weight": 0.36,
-          "industry": ""
-        },
-        {
-          "symbol": "3264",
-          "name": "欣銓科技",
-          "shares": 316000,
-          "weight": 0.34,
-          "industry": ""
-        },
-        {
-          "symbol": "6831",
-          "name": "邁科科技",
-          "shares": 93000,
-          "weight": 0.29,
+          "weight": 0.35,
           "industry": ""
         },
         {
           "symbol": "6442",
           "name": "光紅建聖",
           "shares": 38000,
-          "weight": 0.26,
+          "weight": 0.27,
           "industry": ""
         },
         {
           "symbol": "3533",
           "name": "嘉澤端子工業",
           "shares": 13000,
-          "weight": 0.14,
+          "weight": 0.15,
           "industry": ""
         }
       ]
@@ -372,139 +372,146 @@
       "issuer": "統一投信",
       "source": "https://www.ezmoney.com.tw/ETF/Fund/Info?fundCode=49YTW",
       "date": "2026-08-03",
-      "holdingCount": 51,
+      "holdingCount": 52,
       "holdings": [
         {
           "symbol": "2330",
           "name": "台積電",
           "shares": 10740000,
-          "weight": 9.04,
+          "weight": 8.44,
           "industry": ""
         },
         {
           "symbol": "2383",
           "name": "台光電",
-          "shares": 4715000,
-          "weight": 7.77,
+          "shares": 4797000,
+          "weight": 7.92,
           "industry": ""
         },
         {
           "symbol": "2454",
           "name": "聯發科",
-          "shares": 5200000,
-          "weight": 6.42,
-          "industry": ""
-        },
-        {
-          "symbol": "3037",
-          "name": "欣興",
-          "shares": 17833000,
-          "weight": 4.87,
+          "shares": 5259000,
+          "weight": 6.82,
           "industry": ""
         },
         {
           "symbol": "6669",
           "name": "緯穎",
-          "shares": 2564000,
-          "weight": 4.8,
+          "shares": 2708000,
+          "weight": 5.32,
+          "industry": ""
+        },
+        {
+          "symbol": "3037",
+          "name": "欣興",
+          "shares": 17992000,
+          "weight": 5.16,
           "industry": ""
         },
         {
           "symbol": "2345",
           "name": "智邦",
           "shares": 6419000,
-          "weight": 4.74,
+          "weight": 4.97,
           "industry": ""
         },
         {
           "symbol": "3017",
           "name": "奇鋐",
-          "shares": 5666000,
-          "weight": 4.56,
+          "shares": 5801000,
+          "weight": 4.91,
           "industry": ""
         },
         {
           "symbol": "6223",
           "name": "旺矽",
           "shares": 2443000,
-          "weight": 4.48,
+          "weight": 4.7,
           "industry": ""
         },
         {
           "symbol": "2327",
           "name": "國巨*",
           "shares": 25437000,
-          "weight": 4.43,
+          "weight": 4.66,
           "industry": ""
         },
         {
           "symbol": "3665",
           "name": "貿聯-KY",
           "shares": 5130848,
-          "weight": 3.74,
+          "weight": 3.56,
           "industry": ""
         },
         {
           "symbol": "2303",
           "name": "聯電",
           "shares": 87718000,
-          "weight": 3.69,
-          "industry": ""
-        },
-        {
-          "symbol": "2308",
-          "name": "台達電",
-          "shares": 5932000,
-          "weight": 3.38,
+          "weight": 3.43,
           "industry": ""
         },
         {
           "symbol": "3711",
           "name": "日月光投控",
           "shares": 16327000,
-          "weight": 3.15,
+          "weight": 3.3,
+          "industry": ""
+        },
+        {
+          "symbol": "2308",
+          "name": "台達電",
+          "shares": 5932000,
+          "weight": 3.11,
           "industry": ""
         },
         {
           "symbol": "8046",
           "name": "南電",
           "shares": 9519000,
-          "weight": 3.04,
+          "weight": 3.01,
           "industry": ""
         },
         {
           "symbol": "3653",
           "name": "健策",
           "shares": 2375000,
-          "weight": 2.84,
+          "weight": 2.97,
           "industry": ""
         },
         {
           "symbol": "5274",
           "name": "信驊",
           "shares": 454900,
-          "weight": 2.29,
+          "weight": 2.41,
           "industry": ""
         },
         {
           "symbol": "2368",
           "name": "金像電",
           "shares": 7579000,
-          "weight": 2.09,
+          "weight": 2.19,
           "industry": ""
         },
         {
           "symbol": "6274",
           "name": "台燿",
           "shares": 5229000,
-          "weight": 2.02,
+          "weight": 2.12,
           "industry": ""
         },
         {
           "symbol": "6805",
           "name": "富世達",
           "shares": 1957000,
-          "weight": 0.92,
+          "weight": 0.95,
+          "industry": ""
+        },
+        {
+          "symbol": "2449",
+          "name": "京元電子",
+          "shares": 11295450,
+          "weight": 0.87,
           "industry": ""
         },
         {
@@ -515,44 +522,37 @@
           "industry": ""
         },
         {
-          "symbol": "2449",
-          "name": "京元電子",
-          "shares": 7543450,
-          "weight": 0.59,
-          "industry": ""
-        },
-        {
           "symbol": "6187",
           "name": "萬潤",
           "shares": 1334000,
-          "weight": 0.43,
+          "weight": 0.44,
           "industry": ""
         },
         {
           "symbol": "2360",
           "name": "致茂",
-          "shares": 348000,
-          "weight": 0.25,
+          "shares": 472000,
+          "weight": 0.31,
           "industry": ""
         },
         {
           "symbol": "1590",
           "name": "亞德客-KY",
           "shares": 528000,
-          "weight": 0.24,
-          "industry": ""
-        },
-        {
-          "symbol": "4958",
-          "name": "臻鼎-KY",
-          "shares": 1682000,
-          "weight": 0.24,
+          "weight": 0.25,
           "industry": ""
         },
         {
           "symbol": "4979",
           "name": "華星光",
           "shares": 1874000,
+          "weight": 0.25,
+          "industry": ""
+        },
+        {
+          "symbol": "4958",
+          "name": "臻鼎-KY",
+          "shares": 1682000,
           "weight": 0.24,
           "industry": ""
         },
@@ -613,10 +613,17 @@
           "industry": ""
         },
         {
+          "symbol": "2049",
+          "name": "上銀",
+          "shares": 430000,
+          "weight": 0.05,
+          "industry": ""
+        },
+        {
           "symbol": "6147",
           "name": "頎邦",
-          "shares": 1880000,
-          "weight": 0.08,
+          "shares": 938000,
+          "weight": 0.04,
           "industry": ""
         },
         {
@@ -745,70 +752,70 @@
           "symbol": "2330",
           "name": "台積電",
           "shares": 1794000,
-          "weight": 9.35,
+          "weight": 8.77,
           "industry": ""
         },
         {
           "symbol": "5536",
           "name": "聖暉*",
           "shares": 3792000,
-          "weight": 7.54,
+          "weight": 7.37,
           "industry": ""
         },
         {
           "symbol": "2454",
           "name": "聯發科",
           "shares": 887000,
-          "weight": 6.78,
-          "industry": ""
-        },
-        {
-          "symbol": "6669",
-          "name": "緯穎",
-          "shares": 427000,
-          "weight": 4.95,
+          "weight": 7.16,
           "industry": ""
         },
         {
           "symbol": "6139",
           "name": "亞翔",
-          "shares": 3225000,
-          "weight": 4.9,
+          "shares": 3775000,
+          "weight": 5.96,
+          "industry": ""
+        },
+        {
+          "symbol": "6669",
+          "name": "緯穎",
+          "shares": 480000,
+          "weight": 5.87,
           "industry": ""
         },
         {
           "symbol": "2345",
           "name": "智邦",
           "shares": 831000,
-          "weight": 3.8,
-          "industry": ""
-        },
-        {
-          "symbol": "2360",
-          "name": "致茂",
-          "shares": 837000,
-          "weight": 3.78,
+          "weight": 4,
           "industry": ""
         },
         {
           "symbol": "6223",
           "name": "旺矽",
           "shares": 307000,
-          "weight": 3.48,
+          "weight": 3.68,
           "industry": ""
         },
         {
           "symbol": "2383",
           "name": "台光電",
           "shares": 333000,
-          "weight": 3.4,
+          "weight": 3.42,
+          "industry": ""
+        },
+        {
+          "symbol": "2360",
+          "name": "致茂",
+          "shares": 837000,
+          "weight": 3.38,
           "industry": ""
         },
         {
           "symbol": "2059",
           "name": "川湖",
           "shares": 185000,
-          "weight": 3.12,
+          "weight": 3.3,
           "industry": ""
         }
       ]
