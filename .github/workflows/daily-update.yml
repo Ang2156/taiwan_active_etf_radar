@@ -16,16 +16,22 @@ concurrency:
 jobs:
     update-holdings:
         runs-on: ubuntu-latest
-        timeout-minutes: 15
+        timeout-minutes: 20
 
         steps:
             - name: 下載儲存庫
-              uses: actions/checkout@v4
+              uses: actions/checkout@v6
 
             - name: 安裝 Python
-              uses: actions/setup-python@v5
+              uses: actions/setup-python@v6
               with:
                   python-version: "3.12"
+
+            - name: 安裝瀏覽器抓取工具
+              run: |
+                  python -m pip install --upgrade pip
+                  python -m pip install playwright
+                  python -m playwright install --with-deps chromium
 
             - name: 更新持股資料
               run: python scripts/update_holdings.py
