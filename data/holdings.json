@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-26",
-  "previousDate": "2026-11-25",
-  "generatedAt": "2026-11-26T19:46:39+00:00",
+  "date": "2026-11-27",
+  "previousDate": "2026-11-26",
+  "generatedAt": "2026-11-27T19:37:04+00:00",
   "fundCount": 3,
   "holdingCount": 110,
   "funds": [
@@ -11,125 +11,118 @@
       "name": "主動野村臺灣優選",
       "issuer": "野村投信",
       "source": "https://www.nomurafunds.com.tw/API/ETFAPI/api/Fund/GetFundAssets",
-      "date": "2026-11-26",
+      "date": "2026-11-27",
       "holdingCount": 49,
       "holdings": [
         {
           "symbol": "2330",
           "name": "台灣積體電路製造",
           "shares": 753000,
-          "weight": 10.28,
+          "weight": 10.53,
           "industry": ""
         },
         {
           "symbol": "2454",
           "name": "聯發科技",
           "shares": 265000,
-          "weight": 6.25,
+          "weight": 6.26,
           "industry": ""
         },
         {
           "symbol": "2383",
           "name": "台光電子材料",
           "shares": 233000,
-          "weight": 5.43,
+          "weight": 5.39,
           "industry": ""
         },
         {
           "symbol": "1303",
           "name": "南亞塑膠工業",
           "shares": 2900000,
-          "weight": 4.5,
+          "weight": 4.48,
           "industry": ""
         },
         {
           "symbol": "2059",
           "name": "川湖科技",
           "shares": 84000,
-          "weight": 3.82,
-          "industry": ""
-        },
-        {
-          "symbol": "2317",
-          "name": "鴻海精密工業",
-          "shares": 2108000,
-          "weight": 2.9,
-          "industry": ""
-        },
-        {
-          "symbol": "2308",
-          "name": "台達電子工業",
-          "shares": 404000,
-          "weight": 2.88,
+          "weight": 3.79,
           "industry": ""
         },
         {
           "symbol": "3653",
           "name": "健策精密工業",
           "shares": 96000,
-          "weight": 2.8,
+          "weight": 3.01,
+          "industry": ""
+        },
+        {
+          "symbol": "2317",
+          "name": "鴻海精密工業",
+          "shares": 2108000,
+          "weight": 2.96,
+          "industry": ""
+        },
+        {
+          "symbol": "2308",
+          "name": "台達電子工業",
+          "shares": 404000,
+          "weight": 2.92,
           "industry": ""
         },
         {
           "symbol": "3017",
           "name": "奇鋐科技",
           "shares": 157000,
-          "weight": 2.79,
-          "industry": ""
-        },
-        {
-          "symbol": "2368",
-          "name": "金像電子（股）公司",
-          "shares": 431000,
-          "weight": 2.73,
-          "industry": ""
-        },
-        {
-          "symbol": "6213",
-          "name": "聯茂電子",
-          "shares": 969000,
-          "weight": 2.65,
+          "weight": 2.83,
           "industry": ""
         },
         {
           "symbol": "3037",
           "name": "欣興電子",
           "shares": 625000,
-          "weight": 2.56,
+          "weight": 2.59,
+          "industry": ""
+        },
+        {
+          "symbol": "6213",
+          "name": "聯茂電子",
+          "shares": 969000,
+          "weight": 2.59,
+          "industry": ""
+        },
+        {
+          "symbol": "2368",
+          "name": "金像電子（股）公司",
+          "shares": 431000,
+          "weight": 2.57,
           "industry": ""
         },
         {
           "symbol": "3711",
           "name": "日月光投資控股",
           "shares": 771000,
-          "weight": 2.51,
+          "weight": 2.54,
           "industry": ""
         },
         {
           "symbol": "3044",
           "name": "健鼎科技",
           "shares": 785000,
-          "weight": 2.48,
+          "weight": 2.43,
           "industry": ""
         },
         {
           "symbol": "2408",
           "name": "南亞科技",
           "shares": 1028000,
-          "weight": 2,
+          "weight": 2.03,
           "industry": ""
         },
         {
           "symbol": "3008",
           "name": "大立光電",
           "shares": 69000,
-          "weight": 1.94,
-          "industry": ""
-        },
-        {
-          "symbol": "3231",
-          "name": "緯創資通",
-          "shares": 1763000,
           "weight": 1.87,
           "industry": ""
         },
@@ -137,21 +130,35 @@
           "symbol": "2891",
           "name": "中國信託金融控股",
           "shares": 4151000,
-          "weight": 1.82,
+          "weight": 1.83,
+          "industry": ""
+        },
+        {
+          "symbol": "3231",
+          "name": "緯創資通",
+          "shares": 1763000,
+          "weight": 1.83,
           "industry": ""
         },
         {
           "symbol": "3443",
           "name": "創意電子",
           "shares": 48000,
-          "weight": 1.65,
+          "weight": 1.57,
           "industry": ""
         },
         {
           "symbol": "7769",
           "name": "鴻勁精密",
           "shares": 75000,
-          "weight": 1.5,
+          "weight": 1.47,
+          "industry": ""
+        },
+        {
+          "symbol": "6669",
+          "name": "緯穎科技服務",
+          "shares": 134105,
+          "weight": 1.44,
           "industry": ""
         },
         {
@@ -165,20 +172,20 @@
           "symbol": "2344",
           "name": "華邦電子",
           "shares": 2057000,
-          "weight": 1.35,
-          "industry": ""
-        },
-        {
-          "symbol": "6669",
-          "name": "緯穎科技服務",
-          "shares": 134105,
-          "weight": 1.34,
+          "weight": 1.37,
           "industry": ""
         },
         {
           "symbol": "2884",
           "name": "玉山金融控股",
           "shares": 5156622,
+          "weight": 1.34,
+          "industry": ""
+        },
+        {
+          "symbol": "5274",
+          "name": "信驊科技",
+          "shares": 21300,
           "weight": 1.31,
           "industry": ""
         },
@@ -186,70 +193,63 @@
           "symbol": "2376",
           "name": "技嘉科技",
           "shares": 739000,
-          "weight": 1.29,
+          "weight": 1.3,
           "industry": ""
         },
         {
           "symbol": "2303",
           "name": "聯華電子",
           "shares": 2279000,
-          "weight": 1.29,
+          "weight": 1.28,
           "industry": ""
         },
         {
           "symbol": "6223",
           "name": "旺矽科技",
           "shares": 49000,
-          "weight": 1.28,
-          "industry": ""
-        },
-        {
-          "symbol": "5274",
-          "name": "信驊科技",
-          "shares": 21300,
-          "weight": 1.27,
-          "industry": ""
-        },
-        {
-          "symbol": "3081",
-          "name": "聯亞光電工業",
-          "shares": 119600,
-          "weight": 1.18,
+          "weight": 1.24,
           "industry": ""
         },
         {
           "symbol": "8046",
           "name": "南亞電路板",
           "shares": 251000,
-          "weight": 1.17,
+          "weight": 1.15,
           "industry": ""
         },
         {
           "symbol": "8299",
           "name": "群聯電子",
           "shares": 111000,
-          "weight": 1.15,
+          "weight": 1.13,
           "industry": ""
         },
         {
-          "symbol": "2345",
-          "name": "智邦科技",
-          "shares": 100000,
-          "weight": 1.03,
+          "symbol": "3081",
+          "name": "聯亞光電工業",
+          "shares": 119600,
+          "weight": 1.07,
           "industry": ""
         },
         {
           "symbol": "3036",
           "name": "文曄科技",
           "shares": 906000,
-          "weight": 0.97,
+          "weight": 1.01,
+          "industry": ""
+        },
+        {
+          "symbol": "2345",
+          "name": "智邦科技",
+          "shares": 100000,
+          "weight": 1,
           "industry": ""
         },
         {
           "symbol": "6274",
           "name": "台燿科技",
           "shares": 187000,
-          "weight": 0.94,
+          "weight": 0.91,
           "industry": ""
         },
         {
@@ -263,14 +263,21 @@
           "symbol": "3665",
           "name": "貿聯控股（BizLink Holding In",
           "shares": 70336,
-          "weight": 0.8,
+          "weight": 0.76,
           "industry": ""
         },
         {
           "symbol": "2360",
           "name": "致茂電子",
           "shares": 110000,
-          "weight": 0.77,
+          "weight": 0.76,
+          "industry": ""
+        },
+        {
+          "symbol": "2327",
+          "name": "國巨",
+          "shares": 320000,
+          "weight": 0.71,
           "industry": ""
         },
         {
@@ -281,31 +288,24 @@
           "industry": ""
         },
         {
-          "symbol": "2327",
-          "name": "國巨",
-          "shares": 320000,
-          "weight": 0.69,
-          "industry": ""
-        },
-        {
           "symbol": "3026",
           "name": "禾伸堂企業",
           "shares": 286000,
-          "weight": 0.66,
+          "weight": 0.65,
           "industry": ""
         },
         {
           "symbol": "3264",
           "name": "欣銓科技",
           "shares": 650000,
-          "weight": 0.65,
+          "weight": 0.64,
           "industry": ""
         },
         {
           "symbol": "6805",
           "name": "富世達",
           "shares": 54000,
-          "weight": 0.58,
+          "weight": 0.56,
           "industry": ""
         },
         {
@@ -326,21 +326,21 @@
           "symbol": "7751",
           "name": "竑騰科技",
           "shares": 91000,
-          "weight": 0.52,
+          "weight": 0.49,
           "industry": ""
         },
         {
           "symbol": "3529",
           "name": "力旺電子",
           "shares": 39000,
-          "weight": 0.49,
+          "weight": 0.47,
           "industry": ""
         },
         {
           "symbol": "8996",
           "name": "高力熱處理工業",
           "shares": 58000,
-          "weight": 0.35,
+          "weight": 0.34,
           "industry": ""
         },
         {
@@ -364,48 +364,48 @@
       "name": "主動統一台股增長",
       "issuer": "統一投信",
       "source": "https://www.ezmoney.com.tw/ETF/Fund/Info?fundCode=49YTW",
-      "date": "2026-11-26",
+      "date": "2026-11-27",
       "holdingCount": 51,
       "holdings": [
         {
           "symbol": "2330",
           "name": "台積電",
           "shares": 20216000,
-          "weight": 15.4,
+          "weight": 15.85,
           "industry": ""
         },
         {
           "symbol": "2454",
           "name": "聯發科",
           "shares": 5861000,
-          "weight": 7.71,
+          "weight": 7.76,
           "industry": ""
         },
         {
           "symbol": "3017",
           "name": "奇鋐",
           "shares": 7542000,
-          "weight": 7.49,
+          "weight": 7.61,
           "industry": ""
         },
         {
           "symbol": "2383",
           "name": "台光電",
           "shares": 4172000,
-          "weight": 5.42,
-          "industry": ""
-        },
-        {
-          "symbol": "2345",
-          "name": "智邦",
-          "shares": 8056000,
-          "weight": 4.64,
+          "weight": 5.41,
           "industry": ""
         },
         {
           "symbol": "3037",
           "name": "欣興",
           "shares": 19739000,
+          "weight": 4.59,
+          "industry": ""
+        },
+        {
+          "symbol": "2345",
+          "name": "智邦",
+          "shares": 8056000,
           "weight": 4.51,
           "industry": ""
         },
@@ -413,63 +413,63 @@
           "symbol": "3653",
           "name": "健策",
           "shares": 2552000,
-          "weight": 4.16,
-          "industry": ""
-        },
-        {
-          "symbol": "6223",
-          "name": "旺矽",
-          "shares": 2813000,
-          "weight": 4.11,
+          "weight": 4.48,
           "industry": ""
         },
         {
           "symbol": "3711",
           "name": "日月光投控",
           "shares": 22105000,
-          "weight": 4.01,
+          "weight": 4.09,
           "industry": ""
         },
         {
-          "symbol": "2368",
-          "name": "金像電",
-          "shares": 9220000,
-          "weight": 3.26,
+          "symbol": "6223",
+          "name": "旺矽",
+          "shares": 2813000,
+          "weight": 3.98,
           "industry": ""
         },
         {
           "symbol": "2308",
           "name": "台達電",
           "shares": 8106000,
-          "weight": 3.22,
+          "weight": 3.28,
           "industry": ""
         },
         {
-          "symbol": "3665",
-          "name": "貿聯-KY",
-          "shares": 4489848,
-          "weight": 2.85,
+          "symbol": "2368",
+          "name": "金像電",
+          "shares": 9220000,
+          "weight": 3.08,
           "industry": ""
         },
         {
           "symbol": "2327",
           "name": "國巨*",
           "shares": 23519000,
-          "weight": 2.84,
+          "weight": 2.91,
+          "industry": ""
+        },
+        {
+          "symbol": "3665",
+          "name": "貿聯-KY",
+          "shares": 4489848,
+          "weight": 2.71,
           "industry": ""
         },
         {
           "symbol": "6274",
           "name": "台燿",
           "shares": 7342000,
-          "weight": 2.07,
+          "weight": 2,
           "industry": ""
         },
         {
           "symbol": "3443",
           "name": "創意",
           "shares": 1052000,
-          "weight": 2.01,
+          "weight": 1.93,
           "industry": ""
         },
         {
@@ -483,35 +483,35 @@
           "symbol": "6669",
           "name": "緯穎",
           "shares": 3162561,
-          "weight": 1.76,
-          "industry": ""
-        },
-        {
-          "symbol": "8046",
-          "name": "南電",
-          "shares": 5898000,
-          "weight": 1.53,
+          "weight": 1.9,
           "industry": ""
         },
         {
           "symbol": "6805",
           "name": "富世達",
-          "shares": 1801000,
-          "weight": 1.08,
+          "shares": 1877000,
+          "weight": 1.09,
+          "industry": ""
+        },
+        {
+          "symbol": "8046",
+          "name": "南電",
+          "shares": 3431000,
+          "weight": 0.88,
           "industry": ""
         },
         {
           "symbol": "3231",
           "name": "緯創",
           "shares": 14258000,
-          "weight": 0.85,
+          "weight": 0.83,
           "industry": ""
         },
         {
           "symbol": "5274",
           "name": "信驊",
           "shares": 206900,
-          "weight": 0.69,
+          "weight": 0.71,
           "industry": ""
         },
         {
@@ -532,14 +532,14 @@
           "symbol": "2317",
           "name": "鴻海",
           "shares": 4637000,
-          "weight": 0.36,
+          "weight": 0.37,
           "industry": ""
         },
         {
           "symbol": "8996",
           "name": "高力",
           "shares": 981000,
-          "weight": 0.33,
+          "weight": 0.32,
           "industry": ""
         },
         {
@@ -731,77 +731,77 @@
       "name": "主動群益台灣強棒",
       "issuer": "群益投信",
       "source": "https://www.capitalfund.com.tw/etf/product/detail/399/portfolio",
-      "date": "2026-11-26",
+      "date": "2026-11-27",
       "holdingCount": 10,
       "holdings": [
         {
           "symbol": "2454",
           "name": "聯發科",
           "shares": 957000,
-          "weight": 9.11,
+          "weight": 9.07,
           "industry": ""
         },
         {
           "symbol": "2330",
           "name": "台積電",
           "shares": 1609000,
-          "weight": 8.86,
+          "weight": 9.04,
           "industry": ""
         },
         {
           "symbol": "3105",
           "name": "穩懋",
           "shares": 7059000,
-          "weight": 8.06,
+          "weight": 8.08,
           "industry": ""
         },
         {
           "symbol": "6531",
           "name": "愛普*",
           "shares": 4637000,
-          "weight": 6.35,
+          "weight": 6.2,
           "industry": ""
         },
         {
           "symbol": "6139",
           "name": "亞翔",
           "shares": 4018000,
-          "weight": 6.17,
+          "weight": 6.18,
           "industry": ""
         },
         {
           "symbol": "3491",
           "name": "昇達科",
           "shares": 1330000,
-          "weight": 4.71,
+          "weight": 5.07,
           "industry": ""
         },
         {
           "symbol": "2383",
           "name": "台光電",
           "shares": 369000,
-          "weight": 3.47,
+          "weight": 3.43,
           "industry": ""
         },
         {
           "symbol": "3017",
           "name": "奇鋐",
           "shares": 470000,
-          "weight": 3.37,
+          "weight": 3.4,
           "industry": ""
         },
         {
           "symbol": "6223",
           "name": "旺矽",
           "shares": 301000,
-          "weight": 3.18,
+          "weight": 3.05,
           "industry": ""
         },
         {
           "symbol": "3008",
           "name": "大立光",
           "shares": 270000,
-          "weight": 3.07,
+          "weight": 2.95,
           "industry": ""
         }
       ]
@@ -810,172 +810,29 @@
   "changes": [
     {
       "fundCode": "00981A",
-      "symbol": "1560",
-      "name": "中砂",
-      "industry": "",
-      "action": "新增",
-      "sharesBefore": 0,
-      "sharesAfter": 200000,
-      "shareChange": 200000,
-      "weightBefore": null,
-      "weightAfter": 0.05,
-      "weightChange": null
-    },
-    {
-      "fundCode": "00981A",
-      "symbol": "3231",
-      "name": "緯創",
-      "industry": "",
-      "action": "增持",
-      "sharesBefore": 11967000,
-      "sharesAfter": 14258000,
-      "shareChange": 2291000,
-      "weightBefore": 0.67,
-      "weightAfter": 0.85,
-      "weightChange": 0.18
-    },
-    {
-      "fundCode": "00981A",
-      "symbol": "3711",
-      "name": "日月光投控",
-      "industry": "",
-      "action": "增持",
-      "sharesBefore": 19984000,
-      "sharesAfter": 22105000,
-      "shareChange": 2121000,
-      "weightBefore": 3.6,
-      "weightAfter": 4.01,
-      "weightChange": 0.41
-    },
-    {
-      "fundCode": "00981A",
-      "symbol": "2368",
-      "name": "金像電",
-      "industry": "",
-      "action": "增持",
-      "sharesBefore": 8502000,
-      "sharesAfter": 9220000,
-      "shareChange": 718000,
-      "weightBefore": 2.84,
-      "weightAfter": 3.26,
-      "weightChange": 0.42
-    },
-    {
-      "fundCode": "00981A",
-      "symbol": "6669",
-      "name": "緯穎",
-      "industry": "",
-      "action": "增持",
-      "sharesBefore": 2584561,
-      "sharesAfter": 3162561,
-      "shareChange": 578000,
-      "weightBefore": 1.37,
-      "weightAfter": 1.76,
-      "weightChange": 0.39
-    },
-    {
-      "fundCode": "00981A",
-      "symbol": "3665",
-      "name": "貿聯-KY",
-      "industry": "",
-      "action": "增持",
-      "sharesBefore": 4043848,
-      "sharesAfter": 4489848,
-      "shareChange": 446000,
-      "weightBefore": 2.44,
-      "weightAfter": 2.85,
-      "weightChange": 0.41
-    },
-    {
-      "fundCode": "00981A",
-      "symbol": "6271",
-      "name": "同欣電",
-      "industry": "",
-      "action": "增持",
-      "sharesBefore": 2940000,
-      "sharesAfter": 3310000,
-      "shareChange": 370000,
-      "weightBefore": 0.19,
-      "weightAfter": 0.22,
-      "weightChange": 0.03
-    },
-    {
-      "fundCode": "00981A",
-      "symbol": "2345",
-      "name": "智邦",
-      "industry": "",
-      "action": "增持",
-      "sharesBefore": 7736000,
-      "sharesAfter": 8056000,
-      "shareChange": 320000,
-      "weightBefore": 4.22,
-      "weightAfter": 4.64,
-      "weightChange": 0.42
-    },
-    {
-      "fundCode": "00981A",
-      "symbol": "3017",
-      "name": "奇鋐",
-      "industry": "",
-      "action": "增持",
-      "sharesBefore": 7306000,
-      "sharesAfter": 7542000,
-      "shareChange": 236000,
-      "weightBefore": 6.87,
-      "weightAfter": 7.49,
-      "weightChange": 0.62
-    },
-    {
-      "fundCode": "00981A",
-      "symbol": "6223",
-      "name": "旺矽",
-      "industry": "",
-      "action": "增持",
-      "sharesBefore": 2683000,
-      "sharesAfter": 2813000,
-      "shareChange": 130000,
-      "weightBefore": 3.74,
-      "weightAfter": 4.11,
-      "weightChange": 0.37
-    },
-    {
-      "fundCode": "00981A",
       "symbol": "6805",
       "name": "富世達",
       "industry": "",
       "action": "增持",
-      "sharesBefore": 1676000,
-      "sharesAfter": 1801000,
-      "shareChange": 125000,
-      "weightBefore": 0.95,
-      "weightAfter": 1.08,
-      "weightChange": 0.13
+      "sharesBefore": 1801000,
+      "sharesAfter": 1877000,
+      "shareChange": 76000,
+      "weightBefore": 1.08,
+      "weightAfter": 1.09,
+      "weightChange": 0.01
     },
     {
       "fundCode": "00981A",
-      "symbol": "3008",
-      "name": "大立光",
+      "symbol": "8046",
+      "name": "南電",
       "industry": "",
-      "action": "增持",
-      "sharesBefore": 1000,
-      "sharesAfter": 2000,
-      "shareChange": 1000,
-      "weightBefore": 0,
-      "weightAfter": 0,
-      "weightChange": 0
-    },
-    {
-      "fundCode": "00981A",
-      "symbol": "8150",
-      "name": "南茂",
-      "industry": "",
-      "action": "退出",
-      "sharesBefore": 1000,
-      "sharesAfter": 0,
-      "shareChange": -1000,
-      "weightBefore": 0,
-      "weightAfter": null,
-      "weightChange": null
+      "action": "減持",
+      "sharesBefore": 5898000,
+      "sharesAfter": 3431000,
+      "shareChange": -2467000,
+      "weightBefore": 1.53,
+      "weightAfter": 0.88,
+      "weightChange": -0.65
     },
     {
       "fundCode": "00980A",
@@ -986,9 +843,9 @@
       "sharesBefore": 2900000,
       "sharesAfter": 2900000,
       "shareChange": 0,
-      "weightBefore": 4.43,
-      "weightAfter": 4.5,
-      "weightChange": 0.07
+      "weightBefore": 4.5,
+      "weightAfter": 4.48,
+      "weightChange": -0.02
     },
     {
       "fundCode": "00980A",
@@ -999,9 +856,9 @@
       "sharesBefore": 84000,
       "sharesAfter": 84000,
       "shareChange": 0,
-      "weightBefore": 3.69,
-      "weightAfter": 3.82,
-      "weightChange": 0.13
+      "weightBefore": 3.82,
+      "weightAfter": 3.79,
+      "weightChange": -0.03
     },
     {
       "fundCode": "00980A",
@@ -1012,9 +869,22 @@
       "sharesBefore": 2279000,
       "sharesAfter": 2279000,
       "shareChange": 0,
-      "weightBefore": 1.34,
-      "weightAfter": 1.29,
-      "weightChange": -0.05
+      "weightBefore": 1.29,
+      "weightAfter": 1.28,
+      "weightChange": -0.01
+    },
+    {
+      "fundCode": "00980A",
+      "symbol": "2308",
+      "name": "台達電子工業",
+      "industry": "",
+      "action": "權重調整",
+      "sharesBefore": 404000,
+      "sharesAfter": 404000,
+      "shareChange": 0,
+      "weightBefore": 2.88,
+      "weightAfter": 2.92,
+      "weightChange": 0.04
     },
     {
       "fundCode": "00980A",
@@ -1025,9 +895,9 @@
       "sharesBefore": 2108000,
       "sharesAfter": 2108000,
       "shareChange": 0,
-      "weightBefore": 2.94,
-      "weightAfter": 2.9,
-      "weightChange": -0.04
+      "weightBefore": 2.9,
+      "weightAfter": 2.96,
+      "weightChange": 0.06
     },
     {
       "fundCode": "00980A",
@@ -1038,8 +908,8 @@
       "sharesBefore": 320000,
       "sharesAfter": 320000,
       "shareChange": 0,
-      "weightBefore": 0.67,
-      "weightAfter": 0.69,
+      "weightBefore": 0.69,
+      "weightAfter": 0.71,
       "weightChange": 0.02
     },
     {
@@ -1051,9 +921,9 @@
       "sharesBefore": 753000,
       "sharesAfter": 753000,
       "shareChange": 0,
-      "weightBefore": 10.92,
-      "weightAfter": 10.28,
-      "weightChange": -0.64
+      "weightBefore": 10.28,
+      "weightAfter": 10.53,
+      "weightChange": 0.25
     },
     {
       "fundCode": "00980A",
@@ -1064,9 +934,9 @@
       "sharesBefore": 2057000,
       "sharesAfter": 2057000,
       "shareChange": 0,
-      "weightBefore": 1.31,
-      "weightAfter": 1.35,
-      "weightChange": 0.04
+      "weightBefore": 1.35,
+      "weightAfter": 1.37,
+      "weightChange": 0.02
     },
     {
       "fundCode": "00980A",
@@ -1077,9 +947,9 @@
       "sharesBefore": 100000,
       "sharesAfter": 100000,
       "shareChange": 0,
-      "weightBefore": 1,
-      "weightAfter": 1.03,
-      "weightChange": 0.03
+      "weightBefore": 1.03,
+      "weightAfter": 1,
+      "weightChange": -0.03
     },
     {
       "fundCode": "00980A",
@@ -1090,9 +960,9 @@
       "sharesBefore": 110000,
       "sharesAfter": 110000,
       "shareChange": 0,
-      "weightBefore": 0.75,
-      "weightAfter": 0.77,
-      "weightChange": 0.02
+      "weightBefore": 0.77,
+      "weightAfter": 0.76,
+      "weightChange": -0.01
     },
     {
       "fundCode": "00980A",
@@ -1103,9 +973,9 @@
       "sharesBefore": 431000,
       "sharesAfter": 431000,
       "shareChange": 0,
-      "weightBefore": 2.63,
-      "weightAfter": 2.73,
-      "weightChange": 0.1
+      "weightBefore": 2.73,
+      "weightAfter": 2.57,
+      "weightChange": -0.16
     },
     {
       "fundCode": "00980A",
@@ -1116,22 +986,9 @@
       "sharesBefore": 739000,
       "sharesAfter": 739000,
       "shareChange": 0,
-      "weightBefore": 1.3,
-      "weightAfter": 1.29,
-      "weightChange": -0.01
-    },
-    {
-      "fundCode": "00980A",
-      "symbol": "2382",
-      "name": "廣達電腦",
-      "industry": "",
-      "action": "權重調整",
-      "sharesBefore": 791000,
-      "sharesAfter": 791000,
-      "shareChange": 0,
-      "weightBefore": 1.39,
-      "weightAfter": 1.41,
-      "weightChange": 0.02
+      "weightBefore": 1.29,
+      "weightAfter": 1.3,
+      "weightChange": 0.01
     },
     {
       "fundCode": "00980A",
@@ -1142,9 +999,9 @@
       "sharesBefore": 233000,
       "sharesAfter": 233000,
       "shareChange": 0,
-      "weightBefore": 5.27,
-      "weightAfter": 5.43,
-      "weightChange": 0.16
+      "weightBefore": 5.43,
+      "weightAfter": 5.39,
+      "weightChange": -0.04
     },
     {
       "fundCode": "00980A",
@@ -1155,9 +1012,9 @@
       "sharesBefore": 1028000,
       "sharesAfter": 1028000,
       "shareChange": 0,
-      "weightBefore": 1.93,
-      "weightAfter": 2,
-      "weightChange": 0.07
+      "weightBefore": 2,
+      "weightAfter": 2.03,
+      "weightChange": 0.03
     },
     {
       "fundCode": "00980A",
@@ -1168,9 +1025,9 @@
       "sharesBefore": 265000,
       "sharesAfter": 265000,
       "shareChange": 0,
-      "weightBefore": 6.52,
-      "weightAfter": 6.25,
-      "weightChange": -0.27
+      "weightBefore": 6.25,
+      "weightAfter": 6.26,
+      "weightChange": 0.01
     },
     {
       "fundCode": "00980A",
@@ -1181,9 +1038,9 @@
       "sharesBefore": 5156622,
       "sharesAfter": 5156622,
       "shareChange": 0,
-      "weightBefore": 1.36,
-      "weightAfter": 1.31,
-      "weightChange": -0.05
+      "weightBefore": 1.31,
+      "weightAfter": 1.34,
+      "weightChange": 0.03
     },
     {
       "fundCode": "00980A",
@@ -1194,9 +1051,9 @@
       "sharesBefore": 4151000,
       "sharesAfter": 4151000,
       "shareChange": 0,
-      "weightBefore": 1.85,
-      "weightAfter": 1.82,
-      "weightChange": -0.03
+      "weightBefore": 1.82,
+      "weightAfter": 1.83,
+      "weightChange": 0.01
     },
     {
       "fundCode": "00980A",
@@ -1207,9 +1064,9 @@
       "sharesBefore": 69000,
       "sharesAfter": 69000,
       "shareChange": 0,
-      "weightBefore": 1.87,
-      "weightAfter": 1.94,
-      "weightChange": 0.07
+      "weightBefore": 1.94,
+      "weightAfter": 1.87,
+      "weightChange": -0.07
     },
     {
       "fundCode": "00980A",
@@ -1220,9 +1077,9 @@
       "sharesBefore": 157000,
       "sharesAfter": 157000,
       "shareChange": 0,
-      "weightBefore": 2.7,
-      "weightAfter": 2.79,
-      "weightChange": 0.09
+      "weightBefore": 2.79,
+      "weightAfter": 2.83,
+      "weightChange": 0.04
     },
     {
       "fundCode": "00980A",
@@ -1233,9 +1090,22 @@
       "sharesBefore": 286000,
       "sharesAfter": 286000,
       "shareChange": 0,
-      "weightBefore": 0.64,
-      "weightAfter": 0.66,
-      "weightChange": 0.02
+      "weightBefore": 0.66,
+      "weightAfter": 0.65,
+      "weightChange": -0.01
+    },
+    {
+      "fundCode": "00980A",
+      "symbol": "3036",
+      "name": "文曄科技",
+      "industry": "",
+      "action": "權重調整",
+      "sharesBefore": 906000,
+      "sharesAfter": 906000,
+      "shareChange": 0,
+      "weightBefore": 0.97,
+      "weightAfter": 1.01,
+      "weightChange": 0.04
     },
     {
       "fundCode": "00980A",
@@ -1246,9 +1116,9 @@
       "sharesBefore": 625000,
       "sharesAfter": 625000,
       "shareChange": 0,
-      "weightBefore": 2.47,
-      "weightAfter": 2.56,
-      "weightChange": 0.09
+      "weightBefore": 2.56,
+      "weightAfter": 2.59,
+      "weightChange": 0.03
     },
     {
       "fundCode": "00980A",
@@ -1259,9 +1129,9 @@
       "sharesBefore": 785000,
       "sharesAfter": 785000,
       "shareChange": 0,
-      "weightBefore": 2.39,
-      "weightAfter": 2.48,
-      "weightChange": 0.09
+      "weightBefore": 2.48,
+      "weightAfter": 2.43,
+      "weightChange": -0.05
     },
     {
       "fundCode": "00980A",
@@ -1272,22 +1142,9 @@
       "sharesBefore": 119600,
       "sharesAfter": 119600,
       "shareChange": 0,
-      "weightBefore": 1.15,
-      "weightAfter": 1.18,
-      "weightChange": 0.03
-    },
-    {
-      "fundCode": "00980A",
-      "symbol": "3189",
-      "name": "景碩科技",
-      "industry": "",
-      "action": "權重調整",
-      "sharesBefore": 266000,
-      "sharesAfter": 266000,
-      "shareChange": 0,
-      "weightBefore": 0.89,
-      "weightAfter": 0.9,
-      "weightChange": 0.01
+      "weightBefore": 1.18,
+      "weightAfter": 1.07,
+      "weightChange": -0.11
     },
     {
       "fundCode": "00980A",
@@ -1298,9 +1155,9 @@
       "sharesBefore": 1763000,
       "sharesAfter": 1763000,
       "shareChange": 0,
-      "weightBefore": 1.81,
-      "weightAfter": 1.87,
-      "weightChange": 0.06
+      "weightBefore": 1.87,
+      "weightAfter": 1.83,
+      "weightChange": -0.04
     },
     {
       "fundCode": "00980A",
@@ -1311,22 +1168,9 @@
       "sharesBefore": 650000,
       "sharesAfter": 650000,
       "shareChange": 0,
-      "weightBefore": 0.64,
-      "weightAfter": 0.65,
-      "weightChange": 0.01
-    },
-    {
-      "fundCode": "00980A",
-      "symbol": "3293",
-      "name": "鈊象電子",
-      "industry": "",
-      "action": "權重調整",
-      "sharesBefore": 110000,
-      "sharesAfter": 110000,
-      "shareChange": 0,
-      "weightBefore": 0.58,
-      "weightAfter": 0.55,
-      "weightChange": -0.03
+      "weightBefore": 0.65,
+      "weightAfter": 0.64,
+      "weightChange": -0.01
     },
     {
       "fundCode": "00980A",
@@ -1337,9 +1181,9 @@
       "sharesBefore": 48000,
       "sharesAfter": 48000,
       "shareChange": 0,
-      "weightBefore": 1.64,
-      "weightAfter": 1.65,
-      "weightChange": 0.01
+      "weightBefore": 1.65,
+      "weightAfter": 1.57,
+      "weightChange": -0.08
     },
     {
       "fundCode": "00980A",
@@ -1350,9 +1194,9 @@
       "sharesBefore": 39000,
       "sharesAfter": 39000,
       "shareChange": 0,
-      "weightBefore": 0.48,
-      "weightAfter": 0.49,
-      "weightChange": 0.01
+      "weightBefore": 0.49,
+      "weightAfter": 0.47,
+      "weightChange": -0.02
     },
     {
       "fundCode": "00980A",
@@ -1363,9 +1207,9 @@
       "sharesBefore": 96000,
       "sharesAfter": 96000,
       "shareChange": 0,
-      "weightBefore": 2.7,
-      "weightAfter": 2.8,
-      "weightChange": 0.1
+      "weightBefore": 2.8,
+      "weightAfter": 3.01,
+      "weightChange": 0.21
     },
     {
       "fundCode": "00980A",
@@ -1376,9 +1220,9 @@
       "sharesBefore": 70336,
       "sharesAfter": 70336,
       "shareChange": 0,
-      "weightBefore": 0.77,
-      "weightAfter": 0.8,
-      "weightChange": 0.03
+      "weightBefore": 0.8,
+      "weightAfter": 0.76,
+      "weightChange": -0.04
     },
     {
       "fundCode": "00980A",
@@ -1389,9 +1233,9 @@
       "sharesBefore": 771000,
       "sharesAfter": 771000,
       "shareChange": 0,
-      "weightBefore": 2.54,
-      "weightAfter": 2.51,
-      "weightChange": -0.03
+      "weightBefore": 2.51,
+      "weightAfter": 2.54,
+      "weightChange": 0.03
     },
     {
       "fundCode": "00980A",
@@ -1402,22 +1246,9 @@
       "sharesBefore": 21300,
       "sharesAfter": 21300,
       "shareChange": 0,
-      "weightBefore": 1.26,
-      "weightAfter": 1.27,
-      "weightChange": 0.01
-    },
-    {
-      "fundCode": "00980A",
-      "symbol": "5904",
-      "name": "寶雅國際",
-      "industry": "",
-      "action": "權重調整",
-      "sharesBefore": 1196500,
-      "sharesAfter": 1196500,
-      "shareChange": 0,
-      "weightBefore": 0.55,
-      "weightAfter": 0.53,
-      "weightChange": -0.02
+      "weightBefore": 1.27,
+      "weightAfter": 1.31,
+      "weightChange": 0.04
     },
     {
       "fundCode": "00980A",
@@ -1428,9 +1259,9 @@
       "sharesBefore": 969000,
       "sharesAfter": 969000,
       "shareChange": 0,
-      "weightBefore": 2.55,
-      "weightAfter": 2.65,
-      "weightChange": 0.1
+      "weightBefore": 2.65,
+      "weightAfter": 2.59,
+      "weightChange": -0.06
     },
     {
       "fundCode": "00980A",
@@ -1441,9 +1272,9 @@
       "sharesBefore": 49000,
       "sharesAfter": 49000,
       "shareChange": 0,
-      "weightBefore": 1.25,
-      "weightAfter": 1.28,
-      "weightChange": 0.03
+      "weightBefore": 1.28,
+      "weightAfter": 1.24,
+      "weightChange": -0.04
     },
     {
       "fundCode": "00980A",
@@ -1454,22 +1285,9 @@
       "sharesBefore": 187000,
       "sharesAfter": 187000,
       "shareChange": 0,
-      "weightBefore": 0.93,
-      "weightAfter": 0.94,
-      "weightChange": 0.01
-    },
-    {
-      "fundCode": "00980A",
-      "symbol": "6515",
-      "name": "穎崴科技",
-      "industry": "",
-      "action": "權重調整",
-      "sharesBefore": 33000,
-      "sharesAfter": 33000,
-      "shareChange": 0,
-      "weightBefore": 0.67,
-      "weightAfter": 0.7,
-      "weightChange": 0.03
+      "weightBefore": 0.94,
+      "weightAfter": 0.91,
+      "weightChange": -0.03
     },
     {
       "fundCode": "00980A",
@@ -1480,9 +1298,9 @@
       "sharesBefore": 134105,
       "sharesAfter": 134105,
       "shareChange": 0,
-      "weightBefore": 1.29,
-      "weightAfter": 1.34,
-      "weightChange": 0.05
+      "weightBefore": 1.34,
+      "weightAfter": 1.44,
+      "weightChange": 0.1
     },
     {
       "fundCode": "00980A",
@@ -1493,9 +1311,9 @@
       "sharesBefore": 54000,
       "sharesAfter": 54000,
       "shareChange": 0,
-      "weightBefore": 0.56,
-      "weightAfter": 0.58,
-      "weightChange": 0.02
+      "weightBefore": 0.58,
+      "weightAfter": 0.56,
+      "weightChange": -0.02
     },
     {
       "fundCode": "00980A",
@@ -1506,9 +1324,9 @@
       "sharesBefore": 91000,
       "sharesAfter": 91000,
       "shareChange": 0,
-      "weightBefore": 0.51,
-      "weightAfter": 0.52,
-      "weightChange": 0.01
+      "weightBefore": 0.52,
+      "weightAfter": 0.49,
+      "weightChange": -0.03
     },
     {
       "fundCode": "00980A",
@@ -1519,9 +1337,9 @@
       "sharesBefore": 75000,
       "sharesAfter": 75000,
       "shareChange": 0,
-      "weightBefore": 1.55,
-      "weightAfter": 1.5,
-      "weightChange": -0.05
+      "weightBefore": 1.5,
+      "weightAfter": 1.47,
+      "weightChange": -0.03
     },
     {
       "fundCode": "00980A",
@@ -1532,22 +1350,9 @@
       "sharesBefore": 251000,
       "sharesAfter": 251000,
       "shareChange": 0,
-      "weightBefore": 1.13,
-      "weightAfter": 1.17,
-      "weightChange": 0.04
-    },
-    {
-      "fundCode": "00980A",
-      "symbol": "8210",
-      "name": "勤誠興業",
-      "industry": "",
-      "action": "權重調整",
-      "sharesBefore": 95000,
-      "sharesAfter": 95000,
-      "shareChange": 0,
-      "weightBefore": 0.28,
-      "weightAfter": 0.29,
-      "weightChange": 0.01
+      "weightBefore": 1.17,
+      "weightAfter": 1.15,
+      "weightChange": -0.02
     },
     {
       "fundCode": "00980A",
@@ -1558,9 +1363,9 @@
       "sharesBefore": 111000,
       "sharesAfter": 111000,
       "shareChange": 0,
-      "weightBefore": 1.11,
-      "weightAfter": 1.15,
-      "weightChange": 0.04
+      "weightBefore": 1.15,
+      "weightAfter": 1.13,
+      "weightChange": -0.02
     },
     {
       "fundCode": "00980A",
@@ -1571,22 +1376,9 @@
       "sharesBefore": 58000,
       "sharesAfter": 58000,
       "shareChange": 0,
-      "weightBefore": 0.34,
-      "weightAfter": 0.35,
-      "weightChange": 0.01
-    },
-    {
-      "fundCode": "00981A",
-      "symbol": "2303",
-      "name": "聯電",
-      "industry": "",
-      "action": "權重調整",
-      "sharesBefore": 60392000,
-      "sharesAfter": 60392000,
-      "shareChange": 0,
-      "weightBefore": 1.95,
-      "weightAfter": 1.9,
-      "weightChange": -0.05
+      "weightBefore": 0.35,
+      "weightAfter": 0.34,
+      "weightChange": -0.01
     },
     {
       "fundCode": "00981A",
@@ -1597,8 +1389,8 @@
       "sharesBefore": 8106000,
       "sharesAfter": 8106000,
       "shareChange": 0,
-      "weightBefore": 3.16,
-      "weightAfter": 3.22,
+      "weightBefore": 3.22,
+      "weightAfter": 3.28,
       "weightChange": 0.06
     },
     {
@@ -1610,8 +1402,8 @@
       "sharesBefore": 4637000,
       "sharesAfter": 4637000,
       "shareChange": 0,
-      "weightBefore": 0.35,
-      "weightAfter": 0.36,
+      "weightBefore": 0.36,
+      "weightAfter": 0.37,
       "weightChange": 0.01
     },
     {
@@ -1623,9 +1415,9 @@
       "sharesBefore": 23519000,
       "sharesAfter": 23519000,
       "shareChange": 0,
-      "weightBefore": 2.68,
-      "weightAfter": 2.84,
-      "weightChange": 0.16
+      "weightBefore": 2.84,
+      "weightAfter": 2.91,
+      "weightChange": 0.07
     },
     {
       "fundCode": "00981A",
@@ -1636,9 +1428,35 @@
       "sharesBefore": 20216000,
       "sharesAfter": 20216000,
       "shareChange": 0,
-      "weightBefore": 16.06,
-      "weightAfter": 15.4,
-      "weightChange": -0.66
+      "weightBefore": 15.4,
+      "weightAfter": 15.85,
+      "weightChange": 0.45
+    },
+    {
+      "fundCode": "00981A",
+      "symbol": "2345",
+      "name": "智邦",
+      "industry": "",
+      "action": "權重調整",
+      "sharesBefore": 8056000,
+      "sharesAfter": 8056000,
+      "shareChange": 0,
+      "weightBefore": 4.64,
+      "weightAfter": 4.51,
+      "weightChange": -0.13
+    },
+    {
+      "fundCode": "00981A",
+      "symbol": "2368",
+      "name": "金像電",
+      "industry": "",
+      "action": "權重調整",
+      "sharesBefore": 9220000,
+      "sharesAfter": 9220000,
+      "shareChange": 0,
+      "weightBefore": 3.26,
+      "weightAfter": 3.08,
+      "weightChange": -0.18
     },
     {
       "fundCode": "00981A",
@@ -1649,22 +1467,9 @@
       "sharesBefore": 4172000,
       "sharesAfter": 4172000,
       "shareChange": 0,
-      "weightBefore": 5.17,
-      "weightAfter": 5.42,
-      "weightChange": 0.25
-    },
-    {
-      "fundCode": "00981A",
-      "symbol": "2449",
-      "name": "京元電子",
-      "industry": "",
-      "action": "權重調整",
-      "sharesBefore": 7506450,
-      "sharesAfter": 7506450,
-      "shareChange": 0,
-      "weightBefore": 0.48,
-      "weightAfter": 0.5,
-      "weightChange": 0.02
+      "weightBefore": 5.42,
+      "weightAfter": 5.41,
+      "weightChange": -0.01
     },
     {
       "fundCode": "00981A",
@@ -1675,9 +1480,22 @@
       "sharesBefore": 5861000,
       "sharesAfter": 5861000,
       "shareChange": 0,
-      "weightBefore": 7.89,
-      "weightAfter": 7.71,
-      "weightChange": -0.18
+      "weightBefore": 7.71,
+      "weightAfter": 7.76,
+      "weightChange": 0.05
+    },
+    {
+      "fundCode": "00981A",
+      "symbol": "3017",
+      "name": "奇鋐",
+      "industry": "",
+      "action": "權重調整",
+      "sharesBefore": 7542000,
+      "sharesAfter": 7542000,
+      "shareChange": 0,
+      "weightBefore": 7.49,
+      "weightAfter": 7.61,
+      "weightChange": 0.12
     },
     {
       "fundCode": "00981A",
@@ -1688,22 +1506,22 @@
       "sharesBefore": 19739000,
       "sharesAfter": 19739000,
       "shareChange": 0,
-      "weightBefore": 4.27,
-      "weightAfter": 4.51,
-      "weightChange": 0.24
+      "weightBefore": 4.51,
+      "weightAfter": 4.59,
+      "weightChange": 0.08
     },
     {
       "fundCode": "00981A",
-      "symbol": "3264",
-      "name": "欣銓",
+      "symbol": "3231",
+      "name": "緯創",
       "industry": "",
       "action": "權重調整",
-      "sharesBefore": 5027000,
-      "sharesAfter": 5027000,
+      "sharesBefore": 14258000,
+      "sharesAfter": 14258000,
       "shareChange": 0,
-      "weightBefore": 0.27,
-      "weightAfter": 0.28,
-      "weightChange": 0.01
+      "weightBefore": 0.85,
+      "weightAfter": 0.83,
+      "weightChange": -0.02
     },
     {
       "fundCode": "00981A",
@@ -1714,9 +1532,9 @@
       "sharesBefore": 1052000,
       "sharesAfter": 1052000,
       "shareChange": 0,
-      "weightBefore": 1.97,
-      "weightAfter": 2.01,
-      "weightChange": 0.04
+      "weightBefore": 2.01,
+      "weightAfter": 1.93,
+      "weightChange": -0.08
     },
     {
       "fundCode": "00981A",
@@ -1727,9 +1545,35 @@
       "sharesBefore": 2552000,
       "sharesAfter": 2552000,
       "shareChange": 0,
-      "weightBefore": 3.93,
-      "weightAfter": 4.16,
-      "weightChange": 0.23
+      "weightBefore": 4.16,
+      "weightAfter": 4.48,
+      "weightChange": 0.32
+    },
+    {
+      "fundCode": "00981A",
+      "symbol": "3665",
+      "name": "貿聯-KY",
+      "industry": "",
+      "action": "權重調整",
+      "sharesBefore": 4489848,
+      "sharesAfter": 4489848,
+      "shareChange": 0,
+      "weightBefore": 2.85,
+      "weightAfter": 2.71,
+      "weightChange": -0.14
+    },
+    {
+      "fundCode": "00981A",
+      "symbol": "3711",
+      "name": "日月光投控",
+      "industry": "",
+      "action": "權重調整",
+      "sharesBefore": 22105000,
+      "sharesAfter": 22105000,
+      "shareChange": 0,
+      "weightBefore": 4.01,
+      "weightAfter": 4.09,
+      "weightChange": 0.08
     },
     {
       "fundCode": "00981A",
@@ -1740,9 +1584,22 @@
       "sharesBefore": 206900,
       "sharesAfter": 206900,
       "shareChange": 0,
-      "weightBefore": 0.67,
-      "weightAfter": 0.69,
+      "weightBefore": 0.69,
+      "weightAfter": 0.71,
       "weightChange": 0.02
+    },
+    {
+      "fundCode": "00981A",
+      "symbol": "6223",
+      "name": "旺矽",
+      "industry": "",
+      "action": "權重調整",
+      "sharesBefore": 2813000,
+      "sharesAfter": 2813000,
+      "shareChange": 0,
+      "weightBefore": 4.11,
+      "weightAfter": 3.98,
+      "weightChange": -0.13
     },
     {
       "fundCode": "00981A",
@@ -1753,35 +1610,22 @@
       "sharesBefore": 7342000,
       "sharesAfter": 7342000,
       "shareChange": 0,
-      "weightBefore": 2,
-      "weightAfter": 2.07,
-      "weightChange": 0.07
+      "weightBefore": 2.07,
+      "weightAfter": 2,
+      "weightChange": -0.07
     },
     {
       "fundCode": "00981A",
-      "symbol": "6510",
-      "name": "精測",
+      "symbol": "6669",
+      "name": "緯穎",
       "industry": "",
       "action": "權重調整",
-      "sharesBefore": 470000,
-      "sharesAfter": 470000,
+      "sharesBefore": 3162561,
+      "sharesAfter": 3162561,
       "shareChange": 0,
-      "weightBefore": 0.39,
-      "weightAfter": 0.4,
-      "weightChange": 0.01
-    },
-    {
-      "fundCode": "00981A",
-      "symbol": "8046",
-      "name": "南電",
-      "industry": "",
-      "action": "權重調整",
-      "sharesBefore": 5898000,
-      "sharesAfter": 5898000,
-      "shareChange": 0,
-      "weightBefore": 1.45,
-      "weightAfter": 1.53,
-      "weightChange": 0.08
+      "weightBefore": 1.76,
+      "weightAfter": 1.9,
+      "weightChange": 0.14
     },
     {
       "fundCode": "00981A",
@@ -1792,9 +1636,9 @@
       "sharesBefore": 981000,
       "sharesAfter": 981000,
       "shareChange": 0,
-      "weightBefore": 0.32,
-      "weightAfter": 0.33,
-      "weightChange": 0.01
+      "weightBefore": 0.33,
+      "weightAfter": 0.32,
+      "weightChange": -0.01
     },
     {
       "fundCode": "00982A",
@@ -1805,9 +1649,9 @@
       "sharesBefore": 1609000,
       "sharesAfter": 1609000,
       "shareChange": 0,
-      "weightBefore": 9.47,
-      "weightAfter": 8.86,
-      "weightChange": -0.61
+      "weightBefore": 8.86,
+      "weightAfter": 9.04,
+      "weightChange": 0.18
     },
     {
       "fundCode": "00982A",
@@ -1818,9 +1662,9 @@
       "sharesBefore": 369000,
       "sharesAfter": 369000,
       "shareChange": 0,
-      "weightBefore": 3.39,
-      "weightAfter": 3.47,
-      "weightChange": 0.08
+      "weightBefore": 3.47,
+      "weightAfter": 3.43,
+      "weightChange": -0.04
     },
     {
       "fundCode": "00982A",
@@ -1831,9 +1675,9 @@
       "sharesBefore": 957000,
       "sharesAfter": 957000,
       "shareChange": 0,
-      "weightBefore": 9.55,
-      "weightAfter": 9.11,
-      "weightChange": -0.44
+      "weightBefore": 9.11,
+      "weightAfter": 9.07,
+      "weightChange": -0.04
     },
     {
       "fundCode": "00982A",
@@ -1844,9 +1688,9 @@
       "sharesBefore": 270000,
       "sharesAfter": 270000,
       "shareChange": 0,
-      "weightBefore": 2.98,
-      "weightAfter": 3.07,
-      "weightChange": 0.09
+      "weightBefore": 3.07,
+      "weightAfter": 2.95,
+      "weightChange": -0.12
     },
     {
       "fundCode": "00982A",
@@ -1857,9 +1701,9 @@
       "sharesBefore": 470000,
       "sharesAfter": 470000,
       "shareChange": 0,
-      "weightBefore": 3.28,
-      "weightAfter": 3.37,
-      "weightChange": 0.09
+      "weightBefore": 3.37,
+      "weightAfter": 3.4,
+      "weightChange": 0.03
     },
     {
       "fundCode": "00982A",
@@ -1870,9 +1714,9 @@
       "sharesBefore": 7059000,
       "sharesAfter": 7059000,
       "shareChange": 0,
-      "weightBefore": 7.82,
-      "weightAfter": 8.06,
-      "weightChange": 0.24
+      "weightBefore": 8.06,
+      "weightAfter": 8.08,
+      "weightChange": 0.02
     },
     {
       "fundCode": "00982A",
@@ -1883,9 +1727,9 @@
       "sharesBefore": 1330000,
       "sharesAfter": 1330000,
       "shareChange": 0,
-      "weightBefore": 4.57,
-      "weightAfter": 4.71,
-      "weightChange": 0.14
+      "weightBefore": 4.71,
+      "weightAfter": 5.07,
+      "weightChange": 0.36
     },
     {
       "fundCode": "00982A",
@@ -1896,9 +1740,9 @@
       "sharesBefore": 4018000,
       "sharesAfter": 4018000,
       "shareChange": 0,
-      "weightBefore": 6.11,
-      "weightAfter": 6.17,
-      "weightChange": 0.06
+      "weightBefore": 6.17,
+      "weightAfter": 6.18,
+      "weightChange": 0.01
     },
     {
       "fundCode": "00982A",
@@ -1909,9 +1753,9 @@
       "sharesBefore": 301000,
       "sharesAfter": 301000,
       "shareChange": 0,
-      "weightBefore": 3.11,
-      "weightAfter": 3.18,
-      "weightChange": 0.07
+      "weightBefore": 3.18,
+      "weightAfter": 3.05,
+      "weightChange": -0.13
     },
     {
       "fundCode": "00982A",
@@ -1922,9 +1766,9 @@
       "sharesBefore": 4637000,
       "sharesAfter": 4637000,
       "shareChange": 0,
-      "weightBefore": 6.55,
-      "weightAfter": 6.35,
-      "weightChange": -0.2
+      "weightBefore": 6.35,
+      "weightAfter": 6.2,
+      "weightChange": -0.15
     }
   ],
   "errors": []
